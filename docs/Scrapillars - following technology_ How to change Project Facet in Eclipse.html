@@ -1,0 +1,2554 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)http://scrapillars.blogspot.ch/2014/02/how-to-change-project-facet-in-eclipse.html -->
+<html class="v2" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/cb=gapi.loaded_4" async=""></script><script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/cb=gapi.loaded_3" async=""></script><script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/cb=gapi.loaded_2" async=""></script><script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/cb=gapi.loaded_1" async=""></script><script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/cb=gapi.loaded_0" async=""></script><script async="" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/analytics.js"></script><script type="text/javascript" async="" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/ga.js"></script><script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/jquery-1.10.2.min.js"></script>
+<meta content="width=1100" name="viewport">
+
+<script type="text/javascript">(function() { (function(){function c(a){this.t={};this.tick=function(a,c,b){var d=void 0!=b?b:(new Date).getTime();this.t[a]=[d,c];if(void 0==b)try{window.console.timeStamp("CSI/"+a)}catch(e){}};this.tick("start",null,a)}var a;window.performance&&(a=window.performance.timing);var h=a?new c(a.responseStart):new c;window.jstiming={Timer:c,load:h};if(a){var b=a.navigationStart,e=a.responseStart;0<b&&e>=b&&(window.jstiming.srt=e-b)}if(a){var d=window.jstiming.load;0<b&&e>=b&&(d.tick("_wtsrt",void 0,b),d.tick("wtsrt_",
+"_wtsrt",e),d.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),d&&0<b&&(d.tick("_tbnd",void 0,window.chrome.csi().startE),d.tick("tbnd_","_tbnd",b))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,d&&0<b&&(d.tick("_tbnd",void 0,window.external.startE),d.tick("tbnd_","_tbnd",b))),a&&(window.jstiming.pt=a)}catch(k){}})();window.tickAboveFold=function(c){var a=0;if(c.offsetParent){do a+=c.offsetTop;while(c=c.offsetParent)}c=a;750>=c&&window.jstiming.load.tick("aft")};var f=!1;function g(){f||(f=!0,window.jstiming.load.tick("firstScrollTime"))}window.addEventListener?window.addEventListener("scroll",g,!1):window.attachEvent("onscroll",g);
+ })();</script>
+<meta content="blogger" name="generator">
+<link href="http://scrapillars.blogspot.ch/favicon.ico" rel="icon" type="image/x-icon">
+<link href="http://scrapillars.blogspot.com/2014/02/how-to-change-project-facet-in-eclipse.html" rel="canonical">
+<link rel="alternate" type="application/atom+xml" title="Scrapillars - following technology - Atom" href="http://scrapillars.blogspot.com/feeds/posts/default">
+<link rel="alternate" type="application/rss+xml" title="Scrapillars - following technology - RSS" href="http://scrapillars.blogspot.com/feeds/posts/default?alt=rss">
+<link rel="service.post" type="application/atom+xml" title="Scrapillars - following technology - Atom" href="https://www.blogger.com/feeds/3334607182569568968/posts/default">
+
+<link rel="alternate" type="application/atom+xml" title="Scrapillars - following technology - Atom" href="http://scrapillars.blogspot.com/feeds/8524800029747853602/comments/default">
+<!--[if IE]><script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/1944632664-ieretrofit.js"></script>
+<![endif]-->
+<link href="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/navigation.png" rel="image_src">
+<meta content="http://scrapillars.blogspot.com/2014/02/how-to-change-project-facet-in-eclipse.html" property="og:url">
+<meta content="http://1.bp.blogspot.com/-wvMsPk1BreA/UwrkQ4dtbAI/AAAAAAAAAAs/j6koNmsNnaw/w1200-h630-p-nu/navigation.png" property="og:image">
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>Scrapillars - following technology: How to change Project Facet in Eclipse</title>
+<link type="text/css" rel="stylesheet" href="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/3375562265-css_bundle_v2.css">
+<link type="text/css" rel="stylesheet" href="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/authorization.css">
+<style id="page-skin-1" type="text/css"><!--
+/*
+-----------------------------------------------
+My Blogger Mag
+Designer - SBTemplates
+Author URL: www.seobloggertemplates.com
+----------------------------------------------- */
+.navbar{display:none;}body {
+background: #CCC url(http://demo.smooththemes.com/magazon/wp-content/uploads/2013/09/bg-alt.jpg) center center no-repeat fixed;background-color: #fff;
+color: #333333;
+font-size: 14px;
+font-family: 'Lora', serif;
+}
+.content-outer{
+background: none repeat scroll 0 0 #FFFFFF;
+box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+margin: 0 auto 20px;
+position: relative;
+width: 1000px;
+z-index: 1;
+}
+#related-posts img {
+margin-top: -5px;
+margin-left: -5px;
+}
+#related-posts a {
+margin-bottom: 30px;
+margin-right: 11px;
+width: 170px;
+padding-bottom:20px;
+}.nichewala{font-family: 'Droid Serif';
+}
+#related-posts img {
+width: 180px !important;
+height: 132px !important;
+}
+#related-posts h2 {
+margin-bottom: 20px;
+font-size: 22px;
+padding-top: 22px;
+}
+#related-posts {
+height:100%;
+min-height:100%;margin-top: 70px;
+}
+#main-nav {
+width: 1000px;
+background: #2c2c2c;
+margin: 0 auto;
+height: 50px;
+margin-bottom: -20px;
+margin-left: -10px;
+border-bottom: 5px solid #4371cf;
+}
+#main-nav .menu-alert{
+float:left;
+padding:18px 0 0 10px ;
+font-style:italic;
+color:#FFF;
+}
+#top-menu-mob , #main-menu-mob, .sidelay{ display:none; }
+#main-nav ul li {z-index:20;
+text-transform: uppercase;
+font-family: Oswald,arial,Georgia, serif;
+font-size:16px;
+position: relative;
+display: inline-block;
+float: left;
+border:1px solid;
+border-width:0 0 0 1px;
+height:50px;
+}
+#main-nav ul li:first-child,
+#main-nav ul li:first-child a{border:0 none;}
+#main-nav ul li:last-child a{border-right:0 none;}
+#main-nav ul li a {
+display: inline-block;
+height: 50px;
+line-height: 50px;
+color: #ddd;
+padding:0 14px;
+text-shadow:0 1px 1px #000;
+border-left:1px solid #383838;
+}
+#main-nav ul li a .sub-indicator{}
+#main-nav ul li a:hover {}
+#main-nav ul ul{
+display: none;
+padding:0;
+position: absolute;
+top: 50px;
+width: 180px;
+z-index: 99999;
+float: left;
+background: #2d2d2d !important;
+-webkit-box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.2);
+box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.2);
+-webkit-border-bottom-right-radius: 3px;
+-webkit-border-bottom-left-radius: 3px;
+-moz-border-radius-bottomright: 3px;
+-moz-border-radius-bottomleft: 3px;
+border-bottom-right-radius: 3px;
+border-bottom-left-radius: 3px;
+}
+#main-nav ul ul li, #main-nav ul ul li:first-child {
+background: none !important;
+z-index: 99999;
+min-width: 180px;
+border:0 none;
+border-bottom: 1px solid #222;
+border-top: 1px solid #383838;
+font-size:13px;
+height:auto;
+margin:0;
+}
+#main-nav ul ul li:first-child ,#main-nav ul li.current-menu-item ul li:first-child,
+#main-nav ul li.current-menu-parent ul li:first-child,#main-nav ul li.current-page-ancestor ul li:first-child { border-top:0 none !important;}
+#main-nav ul ul ul ,#main-nav ul li.current-menu-item ul ul, #main-nav ul li.current-menu-parent ul ul, #main-nav ul li.current-page-ancestor ul ul{right: auto;left: 100%; top: 0 !important; z-index: 99999; }
+#main-nav ul.sub-menu a ,
+#main-nav ul ul li.current-menu-item a,
+#main-nav ul ul li.current-menu-parent a,
+#main-nav ul ul li.current-page-ancestor a{
+border:0 none;
+background: none !important;
+height: auto !important;
+line-height: 1em;
+padding: 10px 10px;
+width: 160px;
+display: block !important;
+margin-right: 0 !important;
+z-index: 99999;
+color: #ccc !important;
+text-shadow:0 1px 1px #000 !important;
+}
+#main-nav ul li.current-menu-item ul a,
+#main-nav ul li.current-menu-parent ul a,
+#main-nav ul li.current-page-ancestor ul a{ color:#eee !important; text-shadow:0 1px 1px #222 !important;}
+#main-nav ul li:hover > a, #main-nav ul :hover > a { color: #FFF ;}
+#main-nav ul ul li:hover > a,
+#main-nav ul ul :hover > a {color: #FFF !important; padding-left:15px !important;padding-right:5px !important;}
+#main-nav ul li:hover > ul {display: block;}
+#main-nav ul li.current-menu-item,
+#main-nav ul li.current-menu-parent,
+#main-nav ul li.current-page-ancestor{
+margin-top:0;
+height:50px;
+border-left:0 none !important;
+}
+#main-nav ul li.current-menu-item ul.sub-menu a, #main-nav ul li.current-menu-item ul.sub-menu a:hover,
+#main-nav ul li.current-menu-parent ul.sub-menu a, #main-nav ul li.current-menu-parent ul.sub-menu a:hover
+#main-nav ul li.current-page-ancestor ul.sub-menu a, #main-nav ul li.current-page-ancestor ul.sub-menu a:hover{background: none !important;}
+#main-nav ul li.current-menu-item a, #main-nav ul li.current-menu-item a:hover,
+#main-nav ul li.current-menu-parent a, #main-nav ul li.current-menu-parent a:hover,
+#main-nav ul li.current-page-ancestor a, #main-nav ul li.current-page-ancestor a:hover{
+background:#9EC22D;
+text-shadow:0 1px 1px #b43300;
+color:#FFF;
+height:50px;
+line-height:50px;
+border-left:0 none !important;
+}
+#main-nav ul.sub-menu li.current-menu-item,#main-nav ul.sub-menu li.current-menu-item a,
+#main-nav li.current-menu-item ul.sub-menu a,#main-nav ul.sub-menu li.current-menu-parent,
+#main-nav ul.sub-menu li.current-menu-parent a,#main-nav li.current-menu-parent ul.sub-menu a,
+#main-nav ul.sub-menu li.current-page-ancestor,#main-nav ul.sub-menu li.current-page-ancestor a,
+#main-nav li.current-page-ancestor ul.sub-menu a{height:auto !important; line-height: 12px;}
+#main-nav ul li.menu-item-home ul li a,
+#main-nav ul ul li.menu-item-home a,
+#main-nav ul li.menu-item-home ul li a:hover{
+background-color:transparent !important;
+text-indent:0;
+background-image:none !important;
+height:auto !important;
+width:auto;
+}
+#main-menu-mob,#top-menu-mob{
+background: #222;
+width: 710px;
+padding: 5px;
+border: 1px solid #000;
+color:#DDD;
+height: 27px;
+margin:13px 0 0 10px;
+}
+#top-menu-mob{
+width: 350px;
+margin:2px 0 0 0;
+}
+#main-nav.fixed-nav{
+position:fixed;
+top:0;
+left:0;margin-left: 0px;
+width:100% !important;
+z-index:999;
+opacity:0.9;
+-webkit-box-shadow: 0 5px 3px rgba(0, 0, 0, .1);
+-moz-box-shadow: 0 5px 3px rgba(0, 0, 0, .1);
+box-shadow: 0 5px 3px rgba(0, 0, 0, .1);
+}
+#menu-main a.home{ background-color: #4371cf !important;margin-left: -40px;text-indent:-9999px;padding:0;width:60px;background-image:url(http://3.bp.blogspot.com/-gLyWqvxTm1I/UkxNBw50IQI/AAAAAAAADO8/Qn-VSHK9N1g/s1600/bhome.png);background-position:center;background-repeat:no-repeat}
+.main-menu .menu li.green a:hover { background-color: #8FC821 !important;}.main-menu .menu li.green:hover > a { background-color: #8FC821 !important;}.main-menu .menu li.yellow a:hover { background-color: #F39C12 !important;}.main-menu .menu li.yellow:hover > a { background-color: #F39C12 !important;}.main-menu .menu li.red a:hover { background-color: #E8373E !important;}.main-menu .menu li.red:hover > a { background-color: #E8373E !important;}.main-menu .menu li.orange a:hover { background-color: #FE6600 !important;}.main-menu .menu li.ornage:hover > a { background-color: #FE6600 !important;}.main-menu .menu li.green-2 a:hover { background-color: #accc46 !important;}.main-menu .menu li.green-2:hover > a { background-color: #accc46 !important;}.main-menu .menu li.blue a:hover { background-color: #2950A3 !important;}.main-menu .menu li.blue:hover > a { background-color: #2950A3 !important;}.main-menu .menu li.green-3 a:hover { background-color: #1abc9c !important;}.main-menu .menu li.green-3:hover > a { background-color: #1abc9c !important;}.main-menu .menu li.pink a:hover { background-color: #D90162 !important;}.main-menu .menu li.pink:hover > a { background-color: #D90162 !important;}
+a{
+color:#444444;
+text-decoration:none;
+-webkit-transition:all ease-in-out .2s;
+-moz-transition:all ease-in-out .2s;
+-o-transition:all ease-in-out .2s;
+transition:all ease-in-out .2s
+}
+a:hover{
+color:#000000;}
+#ranpost {
+background: url("http://3.bp.blogspot.com/-tJg92qgXNQI/UoTYSlwogHI/AAAAAAAACjg/OmAB2O-3E7Y/s1600/ran-iconz.png") no-repeat scroll 15px 13px transparent;
+cursor: pointer;
+float: right !important;
+margin-right: 10px;
+width: 50px;
+}
+#ranpost:hover {
+background-color: transparent !important;
+}
+.head_brnews{
+height:30px;background:#fff;width:100%;max-width:1160px;margin:0 auto;border-style: solid ;
+border-width: 1px;border-color: #cccccc;overflow: hidden;width: 938px;margin-top:20px;}
+.breaking-news{
+float:left;
+height:30px;
+position:relative;
+overflow:hidden;
+margin-bottom:20px;
+}
+.breaking-news h4{
+background: #9EC22D;
+display:block;
+float:left;
+padding:0 10px;
+height:32px;
+line-height:30px;
+color:#FFF;
+font-family: Oswald,arial,Georgia,serif;
+text-transform:uppercase;
+font-size:10pt;
+margin-right:10px
+}
+.breaking-news ul{
+float:left
+}
+.breaking-news a:hover{
+color:#333;
+}
+.breaking-news ul li{
+float:left;
+display:block;
+list-style:none;
+}
+.breaking-news ul a{
+padding:1px;
+display:block;
+color:#333;
+white-space:nowrap;
+float:left;
+line-height:30px;
+font-size:13px;
+font-family: 'Droid Serif', serif;
+display:hidden;
+}
+.breaking-news span{
+display:block;
+float:left;
+padding:1px 10px;
+color:#333;
+font-size:12px;
+line-height:30px;
+}
+#social { height:30px; float: right; }
+#social .social_header { margin-bottom: 10px; }
+#social a { border-left: 1px solid #ccc; transition: all 0.6s; -moz-transition: all 0.6s; -ms-transition: all 0.6s; -o-transition: all 0.6s; -webkit-transition: all 0.6s; }
+#social a:hover {transition: all 0.6s; -moz-transition: all 0.6s; -ms-transition: all 0.6s; -o-transition: all 0.6s; -webkit-transition: all 0.6s; }
+#social a.facebook { display:block; float:left; height:30px; width:30px; text-indent:-9999px; background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:0px -30px; background-size: 270px 60px;  }
+#social a:hover.facebook { background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:0px 0px; background-size: 270px 60px;  background-color:#436eac; }
+#social a.twitter { display:block; float:left; height:30px; width:30px; text-indent:-9999px; background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-30px -30px; background-size: 270px 60px; }
+#social a:hover.twitter { background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-30px 0px; background-size: 270px 60px;  background-color:#0598c9; }
+#social a.flickr { display:block; float:left; height:30px; width:30px; text-indent:-9999px; background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-60px -30px; background-size: 270px 60px; }
+#social a:hover.flickr { background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-60px 0px; background-size: 270px 60px;  background-color:#e33b7e; }
+#social a.pinterest{ display:block; float:left; height:30px; width:30px; text-indent:-9999px; background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-90px -30px; background-size: 270px 60px; }
+#social a:hover.pinterest { background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-90px 0px; background-size: 270px 60px;  background-color:#cb2027; }
+#social a.googleplus { display:block; float:left; height:30px; width:30px; text-indent:-9999px; background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-120px -30px; background-size: 270px 60px; }
+#social a:hover.googleplus { background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-120px 0px; background-size: 270px 60px;  background-color:#d64b2e; }
+#social a.vimeo { display:block; float:left; height:30px; width:30px; text-indent:-9999px; background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-150px -30px; background-size: 270px 60px; }
+#social a:hover.vimeo { background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-150px 0px; background-size: 270px 60px;  background-color:#86ae24;}
+#social a.youtube { display:block; float:left; height:30px; width:60px; text-indent:-9999px; background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-180px -30px; background-size: 270px 60px; }
+#social a:hover.youtube { background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-180px 0px; background-size: 270px 60px;  background-color:#e32114;}
+#social a.mail { display:block;float:left; height:30px; width:32px; text-indent:-9999px; background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-240px -30px; background-size: 270px 60px; }
+#social a:hover.mail { background-image:url('http://4.bp.blogspot.com/-2x-LERJnjqU/UqDWg5jizyI/AAAAAAAACpI/0s2QrfsHkwc/s1600/socials@2x.png'); background-position:-240px 0px; background-size: 270px 60px;  background-color:#bc75d6;}
+#top-nav {
+background: #2C2C2C;
+overflow: hidden;
+padding: 8px 20px;
+height: 22px;
+margin-bottom: 25px;
+overflow:hidden;
+}
+#mydate {
+color: #ffffff;
+display: inline-block;
+float: right;
+font-size: 14px;
+padding: 4px 10px;
+font-family: 'Bree Serif', serif;
+}
+#mydate a {
+background: none repeat scroll 0 0 #333333;
+color: #ffffff;
+font-family: sans-serif;
+font-weight: bolder;
+padding: 13px 16px 16px;
+}
+#navtop {
+display: inline-block;
+}
+#navtop ul, #navtop li {
+list-style: none outside none;
+margin: 0;
+padding: 1px 0 0;
+}
+#navtop li {
+float: left;
+height: 18px;
+position: relative;
+}
+#navtop li a {
+border-right: 1px solid #444;
+color: #fff;
+font: 13px;
+font-family: 'Bree Serif', serif;
+padding: 20px 15px;
+text-transform: uppercase;
+}
+#navtop li.dgnsubtop {
+padding-right: 10px;
+background-image: url(http://4.bp.blogspot.com/-NTKXiugkHrs/UIeVQmEzDjI/AAAAAAAAGJ4/G92p5n8hgvY/s7/downarrow-dark.png);
+background-repeat: no-repeat;
+background-position: 90% 50%}
+#header, body#layout #header {width:40%;display:inline-block;float:left;margin-left:22px;
+}
+#header-right, body#layout #header-right {width:50%;display:inline-block;float:right;}
+#header-right .widget {margin:0;}
+.header-outer{
+margin-top:7px;
+margin-bottom:25px;
+}
+#menu-main {
+margin-top: -13px;
+width: 900px;
+margin: 0 auto;
+}
+/* Slider
+-----------------------------------------------
+*/
+#main-top h2 {
+display:none;
+}
+#main-top {
+position:relative;
+z-index:0;
+}
+#main-top .widget-content::after,
+#main-top .widget-content::before,
+#manualslidenya::before,
+#manualslidenya::after {
+content:"";
+position:absolute;
+z-index:-2;
+bottom:15px;
+left:5px;
+width:50%;
+height:20%;
+max-width:300px;
+-webkit-box-shadow:0 15px 10px rgba(0,0,0,0.7);
+-moz-box-shadow:0 15px 10px rgba(0,0,0,0.7);
+box-shadow:0 15px 10px rgba(0,0,0,0.7);
+-webkit-transform:rotate(-1deg);
+-moz-transform:rotate(-1deg);
+-ms-transform:rotate(-1deg);
+-o-transform:rotate(-1deg);
+transform:rotate(-1deg);
+}
+#main-top .widget-content::after,
+#manualslidenya::after {
+right:5px;
+left:auto;
+-webkit-transform:rotate(1deg);
+-moz-transform:rotate(1deg);
+-ms-transform:rotate(1deg);
+-o-transform:rotate(1deg);
+transform:rotate(1deg);
+}
+ul.featpost,
+ul.featpost li {
+padding:0;
+margin:0;
+overflow:hidden;
+position:relative;
+}
+ul.featpost li {
+height:280px;
+display:none;
+float:left;
+}
+ul.featpost li:first-child {
+display:block;
+}
+ul.featpost,
+.featuredpost {
+height:280px;
+}
+.featuredpost {
+overflow:hidden;
+}
+ul.featpost img {
+width:100%;
+height:100%;
+}
+#main-top .widget-content {
+padding:5px;
+}
+ul.featpost .labeltext {
+position:absolute;
+bottom:35px;
+left:0;
+width:85%;
+z-index:9;
+background-color:$(sli.desback.color);
+padding:7px 10px;
+color:$(sli.text.color);
+}
+ul.featpost strong.titlex {
+position:absolute;
+bottom:95px;
+display:block;
+left:10px;
+z-index:10;
+background-color:$(sli.back.color);
+padding:5px 8px;
+max-height:22px;
+overflow:hidden;
+}
+ul.featpost strong.titlex a {
+font:$(sli.font.type);
+color:$(sli.text.color);
+text-decoration:none;
+width:100%;
+font-weight:bold;
+text-transform:capitalize;
+display:inline-block;
+}
+ul.featpost .labeltext .infolabel {
+font-size:90%;text-align:right;
+}
+ul.featpost .labeltext .infolabel a {
+color:$(sli.text.color);
+}
+ul.featpost .labeltext .date {
+margin-right:5px;
+}
+ul.featpost .labeltext p {
+margin:5px 0 0;
+font-style:italic;
+}
+#main-top .flex-control-nav.flex-control-paging, #manualslidenya .flex-control-nav.flex-control-paging {
+position:absolute;
+width:100%;
+bottom:15px;
+z-index: 2;
+}
+#main-top .flex-viewport, #main-top-manualslide .flex-viewport {
+max-width:800px;
+}
+.featuredpost .flex-direction-nav a {
+top:50%;
+margin-top:-20px;
+}
+a.feathumb {
+width:100%;
+height:280px;
+display:block;
+}
+#mainmtop-manualslide .widget > h2 {
+display: none;
+}
+#mainmtop-manualslide .Image .widget-content {
+padding: 0;
+border: 0;
+max-height: 280px;
+overflow: hidden;
+}
+#mainmtop-manualslide .widget {
+padding: 0;
+margin-bottom: 40px;
+}
+#mainmtop-manualslide {
+overflow: hidden;
+max-height: 310px;
+position: relative;
+z-index: 0;
+}
+#manualslidenya {
+padding: 5px;
+max-height: 280px;
+}
+#main-top-manualslide .bungkus {
+padding: 0 10px 15px;
+}
+#main-top-manualslide .Image img {
+max-height: 280px;
+}
+.flex-direction-nav a {
+position:absolute;
+display:block;
+top:90px;
+width:25px;
+height:40px;
+background-color:$(main2.date.color);
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+filter:alpha(opacity=0);
+-moz-opacity:0;
+-khtml-opacity:0;
+opacity:0;
+outline:0;
+text-indent:-9999px;
+background-image:url(http://1.bp.blogspot.com/-5Sp-MZWyiaU/UWxMDK77sGI/AAAAAAAAI9E/5VUb6FmzgNY/s1600/glyphicons-halflings-white.png);
+background-repeat:no-repeat;
+z-index: 2;
+}
+.widget-content:hover .flex-direction-nav a, #manualslidenya:hover .flex-direction-nav a {
+-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+filter:alpha(opacity=100);
+-moz-opacity:1;
+-khtml-opacity:1;
+opacity:1;
+}
+.flex-direction-nav a:hover {
+background-color:$(main2.datehover.color);
+}
+.flex-direction-nav a.flex-prev {
+right:0;
+-moz-border-radius:3px 0 0 3px;
+-webkit-border-radius:3px 0 0 3px;
+border-radius:3px 0 0 3px;
+background-position:-18px 7px;
+}
+.flex-direction-nav a.flex-next {
+left:0;
+-moz-border-radius:0 3px 3px 0;
+-webkit-border-radius:0 3px 3px 0;
+border-radius:0 3px 3px 0;
+background-position:7px 7px;
+}
+.flex-control-nav.flex-control-paging,
+.flex-control-nav.flex-control-paging li {
+list-style:none;
+padding:0;
+text-align:center;
+margin:0;
+}
+.flex-control-nav.flex-control-paging li {
+display:inline-block;
+}
+.flex-control-nav.flex-control-paging a {
+display:inline-block;
+text-indent:-9999px;
+margin:0 3px;
+width:10px;
+height:10px;
+background-color:$(main2.datehover.color);
+cursor:pointer;
+-moz-border-radius:50%;
+-webkit-border-radius:50%;
+border-radius:50%;
+}
+.flex-control-nav.flex-control-paging a.flex-active {
+background-color:$(main2.date.color);
+}
+.flex-viewport,
+.rcbytag {
+max-width:612px;
+margin:0 auto;
+}
+.main-outer {
+width: 940px;
+margin: 0 auto;
+}
+.column-center-outer {
+width: 620px;
+float:left;border-right: 1px solid #eaeaea;
+}
+ul.featpost strong.titlex {
+padding: 10px 15px;background: rgba(67,113,207,0.8);
+z-index: 99;
+font-size: 20px;
+bottom: 100px;
+margin-bottom: 35px;
+}
+ul.featpost strong.titlex a{
+color: #f5f5f5;
+font-family: 'Oswald',serif;
+}
+ul.featpost .labeltext {
+background: rgba(0,0,0,0.7);
+padding: 7px 14px;
+width: 385px;
+color: #fff;
+font-size: 13px;
+line-height: 17px;
+z-index: 99;
+}
+.column-right-outer {
+width: 315px;
+float:right;
+}
+#search {
+height: 30px;
+margin-bottom: 10px;
+}
+#search .searchform {
+border: 1px solid #CCCCCC;
+height: 28px;
+}
+#search .searchform input {
+border: 0 none;
+color: #777777;
+float: left;
+font-size: 12px;
+height: 16px;
+line-height: 16px;
+margin-right: 0;
+padding: 6px 6px 6px 10px;
+width: 237px;
+}
+#search .searchbutton {
+background: url("https://lh5.googleusercontent.com/-ImN2PMvPO8o/UeiaQJDMNDI/AAAAAAAACKw/AyXc9KxnM4w/s20/search.png") no-repeat scroll 5px 50% #FFFFFF;
+border: 0 none;
+box-shadow: 0 1px 0 #BBBBBB;
+color: #FFFFFF;
+cursor: pointer;
+float: left;
+font-size: 13px;
+height: 28px;
+line-height: 13px;
+margin: 0;
+outline: medium none;
+padding: 0;
+width: 30px;
+}
+#search .searchbutton:hover {
+background: url("https://lh6.googleusercontent.com/-cD3ejolXWN8/UeiaPoY3pHI/AAAAAAAACKk/rRnEdPKFp5c/s20/search2.png") no-repeat scroll 5px 50% #9EC22D;
+}
+.sidebar{
+margin:0px;
+}
+.column-center-inner{
+margin:0 auto;
+padding:0px !important;
+}
+.date-header, .post-footer{
+display:none;
+}
+a.more:hover {
+background: #444!important;
+}
+a.more{
+background: #222;
+color: #FFF;
+padding: 3px 7px;
+display: block;
+float: left;
+margin-top: 4px;
+}
+.post-title{
+font-family: 'Bree Serif', serif;
+font-size: 25px;
+font-weight: normal;
+text-transform: none;
+padding-bottom:14px;
+}
+.post-title a{
+color:#000;
+}
+.post-outer {
+border-bottom: 1px solid #f2f2f2;
+padding: 20px 0;
+clear: both;
+}
+.share-post{clear:both;margin:10px 0 0;padding:10px 0 10px 10px;background:#f7f7f7;border-top:1px solid #eaeaea;border-bottom:1px solid #eaeaea;height:20px}
+.share-post span.share-text{background:#4371cf;margin:-11px 10px -10px -10px;display:block;float:left;color:#FFF;padding:8px;  font-family: 'Oswald';
+font-size:14pt}
+.share-post span.share-txt{background:#9EC22D;margin:-11px 10px -10px -10px;display:block;float:left;color:#FFF;padding:7px;font-family:BebasNeueRegular,arial,Georgia,serif;font-size:14pt}.headingfeature1{
+border-bottom:2px solid #4371cf;
+padding: 0;
+margin: 0;
+height: 15px;
+background-image: url(http://1.bp.blogspot.com/-iihTARLe-bw/UXVDjux7QWI/AAAAAAAADLw/kY3I4JWtOy4/s1600/dots_pat.png);
+background-repeat: repeat-x;
+background-position: center;
+z-index:1;
+}
+.linku1{
+position: absolute;
+top: 0;
+left: 0;
+font-size: 15px;
+font-family: Oswald,arial,Georgia,serif;
+padding: 0px 14px;
+text-transform: uppercase;
+background-color: #4371cf;
+margin-bottom: 10px;
+color:#fff;font-weight:normal;
+}
+.rthumbbox {
+width: 280px;
+float: right;
+border-bottom: 1px solid #eaeaea;
+margin-top:10px;
+padding-bottom:10px;
+}
+.rthumbbox img{
+width: 70px;
+height:56px;
+float: left;
+margin-right:10px;
+}
+.rthumbbox h2{
+font-weight: 300;
+line-height: 1.2em;
+font-size: 14px;
+font-family: 'Bree Serif', serif;
+}
+.firstka{
+float:left;
+width: 300px;
+padding-right:10px;border-bottom:0px;
+margin-top:0px;
+}
+.firstka img{
+width: 300px;
+height: 160px;
+}
+.firstka h2{
+font-size: 25px;
+line-height: 1.2em;
+font-family: 'Bree Serif', serif;
+}
+#featurebottom2{
+width:290px;
+float:left;
+}
+#featurebottom13{
+width:290px;
+float:right;
+}
+.headingfeature2 {
+border-bottom: 2px solid #F88C00;
+padding: 0;
+margin: 0;
+height: 15px;
+background-image: url(http://1.bp.blogspot.com/-iihTARLe-bw/UXVDjux7QWI/AAAAAAAADLw/kY3I4JWtOy4/s1600/dots_pat.png);
+background-repeat: repeat-x;
+background-position: center;
+z-index: 1;
+}
+.headingfeature3 {
+border-bottom: 2px solid #E8373E;
+padding: 0;
+margin: 0;
+height: 15px;
+background-image: url(http://1.bp.blogspot.com/-iihTARLe-bw/UXVDjux7QWI/AAAAAAAADLw/kY3I4JWtOy4/s1600/dots_pat.png);
+background-repeat: repeat-x;
+background-position: center;
+z-index: 1;
+}
+.linku2 {
+position: absolute;
+top: 0;
+left: 0;
+font-size: 15px;
+font-family: Oswald,arial,Georgia,serif;
+padding: 0px 14px;
+text-transform: uppercase;
+background-color: #F88C00;
+margin-bottom: 10px;
+color: #fff;font-weight: normal;
+}
+.linku3 {
+position: absolute;
+top: 0;
+left: 0;
+font-size: 15px;
+font-family: Oswald,arial,Georgia,serif;
+padding: 0px 14px;
+text-transform: uppercase;
+background-color: #E8373E;
+margin-bottom: 10px;
+color: #fff;font-weight: normal;
+}
+.rthumbbox2 {
+width: 290px;
+float: right;
+border-bottom: 1px solid #eaeaea;
+margin-top:10px;
+padding-bottom:10px;
+}
+.rthumbbox2 img{
+width: 70px;
+height:56px;
+float: left;
+margin-right:10px;
+}
+.rthumbbox2 h2{
+font-weight: 300;
+line-height: 1.2em;
+font-size: 14px;
+font-family: 'Bree Serif', serif;
+}
+.firstka2{
+margin-top:0px;
+}
+.firstka2 img{margin-bottom:10px;
+width:290px;
+height:148px;
+}
+.rthumbbox3 {
+width: 290px;
+float: right;
+border-bottom: 1px solid #eaeaea;
+margin-top:10px;
+padding-bottom:10px;
+}
+.rthumbbox3 img{
+width: 70px;
+height:56px;
+float: left;
+margin-right:10px;
+}
+.rthumbbox3 h2{
+font-weight: 300;
+line-height: 1.2em;
+font-size: 14px;
+font-family: 'Bree Serif', serif;
+}
+.firstka3{
+margin-top:0px;
+}
+.firstka3 img{
+width:290px;
+height:148px;margin-bottom:10px;
+}
+.firstka2 h2{
+font-size: 24px;
+line-height: 1.2em;
+font-family: 'Bree Serif', serif;
+font-weight: normal;
+}
+.firstka3 h2{
+font-size: 24px;
+line-height: 1.2em;
+font-family: 'Bree Serif', serif;
+}
+.linku4 {
+position: absolute;
+top: 0;
+left: 0;
+font-size: 15px;
+font-family: Oswald,arial,Georgia,serif;
+padding: 0px 14px;
+text-transform: uppercase;
+background-color: #333;font-weight: normal;
+margin-bottom: 10px;
+color: #fff;
+z-index:1;
+}
+.rthumbbox4 {
+width: 280px;
+float: right;
+border-bottom: 1px solid #eaeaea;
+margin-top:10px;
+padding-bottom:10px;
+margin-right:10px;
+}
+.rthumbbox4 img{
+width: 90px;
+height:76px;
+float: left;
+margin-right:10px;
+}
+.rthumbbox4 h2{
+font-weight: 300;
+line-height: 1.2em;
+font-size: 14px;
+font-family: 'Bree Serif', serif;
+}
+.headingfeature4{
+border-bottom:2px solid #333;
+padding: 0;
+margin: 0;
+height: 15px;
+background-image: url(http://1.bp.blogspot.com/-iihTARLe-bw/UXVDjux7QWI/AAAAAAAADLw/kY3I4JWtOy4/s1600/dots_pat.png);
+background-repeat: repeat-x;
+background-position: center;
+z-index:1;
+}.sidebar h2 {
+padding-bottom: 5px;
+border-bottom: 4px solid #333;
+font-size: 18px;
+font-family: Oswald,arial,Georgia,serif;
+text-transform: uppercase;
+font-weight: normal;
+}
+.Label a{
+padding-left:20px;
+background:#333;
+padding:0 20px;
+color:#fff!important;
+height:32px;
+line-height:32px;
+text-transform:uppercase;
+text-decoration:none;
+border:none !important;
+-webkit-transition:all .3s ease-in-out !important;t: 30pxt: 30px;
+float:left;
+margin-left:5px;
+margin-top:5px;
+font-size:14px; }
+.Label a:hover{
+color:#000 !important;
+background:#4371cf ; }
+.Attribution, .feed-links{display:none;}
+#detailfoot{
+background: none repeat scroll 0 0 #1B1B1B;
+border-top: 3px solid #4371cf ;
+margin: 0 auto;
+overflow: hidden;
+padding: 20px;
+margin-left:-10px;
+margin-right:-10px;
+margin-bottom:-10px;
+color:#eee;
+}
+#detailfoot a{
+color:#4371cf ;
+}
+.column-center-outer .HTML{
+display:none;
+}#comments {
+padding-top: 20px;
+}
+#comments {
+background-color: #fff;
+padding-top: 20px;
+}
+.comments .continue a {
+background:#0d86cc;
+text-align:center;
+padding:10px 0;
+display:none;
+}
+.comments .continue a {
+line-height: 30px;
+margin: 0;
+padding: 20px 0 14px 10px;
+font-size: 18px!important;
+text-transform: uppercase;
+font-weight: 400!important;
+color: #444;
+}
+.comments .user a {
+color: #444!important;
+font-size: 18px;
+line-height: 25px;
+text-transform: uppercase;
+margin-top: 20px;
+font-family: 'Open Sans Condensed';
+font-style: normal;
+font-weight: 700;
+padding-left: 15px;
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+}
+#comments .avatar-image-container img {
+border: 1px solid #ddd;
+}
+}
+.comment-thread {
+color:#111;
+}
+.comment-thread a {
+color:#777;
+}
+.comment-thread ol {
+margin:0 0 20px;
+}
+.comment-thread .comment-content a,.comments .user a,.comments .comment-thread.inline-thread .user a {
+color:#000;
+}
+.comments .avatar-image-container{overflow: visible;}
+.comments .avatar-image-container,.comments .avatar-image-container img {
+width:48px;
+max-width:40px;
+height:40px;
+max-height:48px;
+background:#FFF;
+float:left;
+border-radius:50%;
+-moz-border-radius:50%;
+margin:0 10px 0 0;
+}
+.comments .comment-block,.comments .comments-content .comment-replies,.comments .comment-replybox-single {
+margin-left:60px;
+}
+.thread-chrome .comment-block {
+width: 455px;
+}
+.comments .comment-block,.comments .comment-thread.inline-thread .comment {
+border:1px solid #ddd;
+background:#fff;
+background-color:#fff;
+padding:10px;
+padding-right:0px;
+padding-left: 0px;
+}
+#comments h4 {
+color: #333;
+font-family: &#39;
+font-size: 24px;
+line-height: 30px;
+padding-bottom: 20px;
+font-weight: 400;
+margin-bottom: -15px;
+}
+.comment-header {
+border-bottom: 1px solid #ddd;
+padding-bottom: 10px;
+}
+.thread-chrome.thread-expanded .comment-header {
+width: 440px;
+margin-left: 15px;
+}
+.comments .comments-content .comment {
+width:100%;
+line-height:1em;
+font-size:13px;
+margin:15px 0 0;
+padding:0;
+}
+.comments .comments-content .comment-content {
+text-align: justify;
+line-height: 22px;
+overflow: hidden;
+color: #420;
+padding: 20px;
+}
+.thread-chrome .comment {
+border: none!important;
+}
+.thread-chrome.thread-expanded .comment-content {
+width: 420px;
+line-height: 22px;
+overflow:hidden
+}
+.comments .comment-thread.inline-thread .comment-actions {
+display: none;
+}
+.item-control.blog-admin {
+display: none;
+}
+.comments .comments-content .datetime {
+cursor: pointer;
+float: right;
+padding-top: 6px;
+padding-right: 20px;
+}
+.comment-actions {
+background: #f2f2f2;
+padding: 8px;
+margin-left: 435px;
+border: 1px solid #ddd;
+border-right: 0px;
+border-bottom: 0px;
+float: right;
+margin-top: -20px;
+}.pagenavi .current {
+text-decoration: none;
+color: #fff;
+}
+.pagenavi {
+padding-bottom:40px;
+margin-top:20px;
+}
+.pagenavi span, .pagenavi a {
+margin: 0 5px 0 0;
+padding: 5px 12px;
+text-decoration: none;
+background-color: #333;
+border: 1px solid #333;
+color: #fff;
+}
+.pagenavi .current{
+background: #4371cf ;border:1px solid #4371cf ;
+}.breaking-news {
+width:648px;font-family: 'Bree Serif', serif;
+}
+.breaking-news marquee {
+padding-top:5px;
+}
+.samazhlo {
+background: #4371CF;
+position:absolute;
+float: left;
+padding: 0 10px;
+height: 32px;
+line-height: 30px;
+color: #FFF;
+font-family: Oswald,arial,Georgia,serif;
+text-transform: uppercase;
+font-size: 10pt;
+margin-right: 10px;}
+.tinynav {
+width:200px;display:none;
+height:30px;
+font-family: Oswald,arial,Georgia, serif;
+font-style: normal;
+font-weight: 400;
+font-size:18px;
+border:1px solid #000;
+margin:0 auto;margin-bottom:10px;
+}
+@media only screen and (max-width: 1028px){
+.content-outer {
+width: 700px;
+}
+#header {width:100%;display:inline-block;margin:0 auto !important;
+}
+#header img {
+margin: 0 auto;
+}
+#header-right{
+float:none;
+width: 100% !important;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+#header-right img{
+margin: 0;
+}
+#main-nav {
+width: 700px;
+}
+.head_brnews {
+width: 652px;
+}
+.column-right-outer{
+width:320px;
+float:left;
+}
+.column-center-outer{
+width:670px;
+border-right: 0px solid #eaeaea;
+}
+.tinynav { display: block;width:90%;}
+#menu-main{ display: none;}
+.main-menu{
+padding-top:10px;
+}
+}
+@media only screen and (max-width: 725px){
+.content-outer{
+width: 430px;
+}
+#header-right{display:none;}
+#main-nav{
+width:430px;
+}
+.head_brnews {
+width: 400px;
+}
+.column-center-outer{
+width:410px;
+}
+.rthumbbox {
+float: left;
+}
+#featurebottom13 {
+float: left;
+}
+#featurebottom4 {
+width: 290px;
+}
+.share-post {
+width:370px;
+}
+.share-post span.share-text {
+display:none;
+}
+.main-outer{
+width:430px;
+}
+}
+
+--></style>
+<style id="template-skin-1" type="text/css"><!--
+#layout .column-center-outer .HTML{
+display:block;
+}
+#layout #top-nav {
+display: none;
+}
+#layout .header-outer {
+margin-top: 30px;
+background: #666;
+padding-top: 15px;
+}
+#layout .tabs-outer {
+display: none;
+}
+#layout .column-center-outer {
+width: 600px;
+}
+#layout #search {
+display: none;
+}
+#layout .main .widget-content {
+background: #333;
+color: #fff;
+font-weight: bold;
+padding: 10px;
+}
+#layout .main .widget-wrap2 {
+background: red url(https://www.blogger.com/img/widgets/draggable.png) no-repeat 4px 50% !important;
+}
+--></style>
+<script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-49603762-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script');
+          ga.type = 'text/javascript';
+          ga.async = true;
+          ga.src = (document.location.protocol == 'https:' ?
+                    'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+<link href="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/css" rel="stylesheet" type="text/css">
+<link href="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/css(1)" rel="stylesheet" type="text/css">
+<link href="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/css(2)" rel="stylesheet" type="text/css">
+<link href="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/font-awesome.css" rel="stylesheet">
+<script>
+$(function(){
+  $(window).scroll(function(){
+    var aTop = $('#top-nav').height();
+    if($(this).scrollTop()>aTop){
+  $("#main-nav").addClass("fixed-nav");
+    }
+ else {
+   $('#main-nav').removeClass("fixed-nav");
+ }
+  });
+});
+//<![CDATA[
+
+
+function removeHtmlTag(strx,chop){ 
+	if(strx.indexOf("<")!=-1)
+	{
+		var s = strx.split("<"); 
+		for(var i=0;i<s.length;i++){ 
+			if(s[i].indexOf(">")!=-1){ 
+				s[i] = s[i].substring(s[i].indexOf(">")+1,s[i].length); 
+			} 
+		} 
+		strx =  s.join(""); 
+	}
+	chop = (chop < strx.length-1) ? chop : strx.length-2; 
+	while(strx.charAt(chop-1)!=' ' && strx.indexOf(' ',chop)!=-1) chop++; 
+	strx = strx.substring(0,chop-1); 
+	return strx+'...'; 
+}
+
+function createSummaryAndThumb(pID){
+	var div = document.getElementById(pID);
+	var imgtag = "";
+	var img = div.getElementsByTagName("img");
+	var summ = summary_noimg;
+        if(thumbnail_mode == "yes") {
+	if(img.length>=1) {	
+		imgtag = '<span style="float:left; padding:0px 10px 5px 0px;"><img src="'+img[0].src+'" width="'+img_thumb_width+'px" height="'+img_thumb_height+'px"/></span>';
+		summ = summary_img;
+	}
+	}
+	var summary = imgtag + '<div>' + removeHtmlTag(div.innerHTML,summ) + '</div>';
+	div.innerHTML = summary;
+}
+function recentthumbs(_0x1bd1x2) {
+    for (var _0x1bd1x3 = 0; _0x1bd1x3 < _0x1bd1x2['feed']['entry']['length']; _0x1bd1x3++) {
+        for (var _0x1bd1x4 = 0; _0x1bd1x4 < _0x1bd1x2['feed']['entry'][_0x1bd1x3]['link']['length']; _0x1bd1x4++) {
+            if (_0x1bd1x2['feed']['entry'][_0x1bd1x3]['link'][_0x1bd1x4]['rel'] == 'alternate') {
+                break;
+            };
+        };
+        var _0x1bd1x5 = _0x1bd1x2['feed']['entry'][_0x1bd1x3];
+        var _0x1bd1x6 = _0x1bd1x5['link'][_0x1bd1x4]['href'];
+        var _0x1bd1x7 = _0x1bd1x5['title']['$t'];
+        var _0x1bd1x8;
+        try {
+            _0x1bd1x8 = _0x1bd1x5['media$thumbnail']['url'];
+            _0x1bd1x8 = _0x1bd1x8['replace']('/s72-c/', '/s550-a/');
+        } catch (error) {
+            s = _0x1bd1x5['content']['$t'];
+            a = s['indexOf']('<img');
+            b = s['indexOf']('src="', a);
+            c = s['indexOf']('"', b + 5);
+            d = s['substr'](b + 5, c - b - 5);
+            if ((a != -1) && (b != -1) && (c != -1) && (d != '')) {
+                _0x1bd1x8 = d;
+            } else {
+                _0x1bd1x8 = 'http://2.bp.blogspot.com/-fvGHB8GLUjY/ThG-C3fXoMI/AAAAAAAAI34/N2s5uttNFfY/s400/noimg.jpg';
+            };
+        };
+      document['write']('<div class="featuredpostbig"><div class="rthumbbox"><strong></strong><a  href="' + _0x1bd1x6 + '"  title="' + _0x1bd1x7 + '"><div class="rthumbbig"><div class="imgbox"><img src="' + _0x1bd1x8 + '"/></div><h2><a href="' + _0x1bd1x6 + '"  title="' + _0x1bd1x7 + '">' + _0x1bd1x7 + '</a></h2></div></a></div></div>');
+    };
+};
+function recentthumbs2(_0x1bd1x2) {
+    for (var _0x1bd1x3 = 0; _0x1bd1x3 < _0x1bd1x2['feed']['entry']['length']; _0x1bd1x3++) {
+        for (var _0x1bd1x4 = 0; _0x1bd1x4 < _0x1bd1x2['feed']['entry'][_0x1bd1x3]['link']['length']; _0x1bd1x4++) {
+            if (_0x1bd1x2['feed']['entry'][_0x1bd1x3]['link'][_0x1bd1x4]['rel'] == 'alternate') {
+                break;
+            };
+        };
+        var _0x1bd1x5 = _0x1bd1x2['feed']['entry'][_0x1bd1x3];
+        var _0x1bd1x6 = _0x1bd1x5['link'][_0x1bd1x4]['href'];
+        var _0x1bd1x7 = _0x1bd1x5['title']['$t'];
+        var _0x1bd1x8;
+        try {
+            _0x1bd1x8 = _0x1bd1x5['media$thumbnail']['url'];
+            _0x1bd1x8 = _0x1bd1x8['replace']('/s72-c/', '/s550-a/');
+        } catch (error) {
+            s = _0x1bd1x5['content']['$t'];
+            a = s['indexOf']('<img');
+            b = s['indexOf']('src="', a);
+            c = s['indexOf']('"', b + 5);
+            d = s['substr'](b + 5, c - b - 5);
+            if ((a != -1) && (b != -1) && (c != -1) && (d != '')) {
+                _0x1bd1x8 = d;
+            } else {
+                _0x1bd1x8 = 'http://2.bp.blogspot.com/-fvGHB8GLUjY/ThG-C3fXoMI/AAAAAAAAI34/N2s5uttNFfY/s400/noimg.jpg';
+            };
+        };
+      document['write']('<div class="featuredpostbig2"><div class="rthumbbox2"><strong></strong><a  href="' + _0x1bd1x6 + '"  title="' + _0x1bd1x7 + '"><div class="rthumbbig2"><div class="imgbox2"><img src="' + _0x1bd1x8 + '"/></div><h2><a href="' + _0x1bd1x6 + '"  title="' + _0x1bd1x7 + '">' + _0x1bd1x7 + '</a></h2></div></a></div></div>');
+    };
+};
+function recentthumbs3(_0x1bd1x2) {
+    for (var _0x1bd1x3 = 0; _0x1bd1x3 < _0x1bd1x2['feed']['entry']['length']; _0x1bd1x3++) {
+        for (var _0x1bd1x4 = 0; _0x1bd1x4 < _0x1bd1x2['feed']['entry'][_0x1bd1x3]['link']['length']; _0x1bd1x4++) {
+            if (_0x1bd1x2['feed']['entry'][_0x1bd1x3]['link'][_0x1bd1x4]['rel'] == 'alternate') {
+                break;
+            };
+        };
+        var _0x1bd1x5 = _0x1bd1x2['feed']['entry'][_0x1bd1x3];
+        var _0x1bd1x6 = _0x1bd1x5['link'][_0x1bd1x4]['href'];
+        var _0x1bd1x7 = _0x1bd1x5['title']['$t'];
+        var _0x1bd1x8;
+        try {
+            _0x1bd1x8 = _0x1bd1x5['media$thumbnail']['url'];
+            _0x1bd1x8 = _0x1bd1x8['replace']('/s72-c/', '/s550-a/');
+        } catch (error) {
+            s = _0x1bd1x5['content']['$t'];
+            a = s['indexOf']('<img');
+            b = s['indexOf']('src="', a);
+            c = s['indexOf']('"', b + 5);
+            d = s['substr'](b + 5, c - b - 5);
+            if ((a != -1) && (b != -1) && (c != -1) && (d != '')) {
+                _0x1bd1x8 = d;
+            } else {
+                _0x1bd1x8 = 'http://2.bp.blogspot.com/-fvGHB8GLUjY/ThG-C3fXoMI/AAAAAAAAI34/N2s5uttNFfY/s400/noimg.jpg';
+            };
+        };
+      document['write']('<div class="featuredpostbig3"><div class="rthumbbox3"><strong></strong><a  href="' + _0x1bd1x6 + '"  title="' + _0x1bd1x7 + '"><div class="rthumbbig3"><div class="imgbox3"><img src="' + _0x1bd1x8 + '"/></div><h2><a href="' + _0x1bd1x6 + '"  title="' + _0x1bd1x7 + '">' + _0x1bd1x7 + '</a></h2></div></a></div></div>');
+    };
+};
+function recentthumbs4(_0x1bd1x2) {
+    for (var _0x1bd1x3 = 0; _0x1bd1x3 < _0x1bd1x2['feed']['entry']['length']; _0x1bd1x3++) {
+        for (var _0x1bd1x4 = 0; _0x1bd1x4 < _0x1bd1x2['feed']['entry'][_0x1bd1x3]['link']['length']; _0x1bd1x4++) {
+            if (_0x1bd1x2['feed']['entry'][_0x1bd1x3]['link'][_0x1bd1x4]['rel'] == 'alternate') {
+                break;
+            };
+        };
+        var _0x1bd1x5 = _0x1bd1x2['feed']['entry'][_0x1bd1x3];
+        var _0x1bd1x6 = _0x1bd1x5['link'][_0x1bd1x4]['href'];
+        var _0x1bd1x7 = _0x1bd1x5['title']['$t'];
+        var _0x1bd1x8;
+        try {
+            _0x1bd1x8 = _0x1bd1x5['media$thumbnail']['url'];
+            _0x1bd1x8 = _0x1bd1x8['replace']('/s72-c/', '/s550-a/');
+        } catch (error) {
+            s = _0x1bd1x5['content']['$t'];
+            a = s['indexOf']('<img');
+            b = s['indexOf']('src="', a);
+            c = s['indexOf']('"', b + 5);
+            d = s['substr'](b + 5, c - b - 5);
+            if ((a != -1) && (b != -1) && (c != -1) && (d != '')) {
+                _0x1bd1x8 = d;
+            } else {
+                _0x1bd1x8 = 'http://2.bp.blogspot.com/-fvGHB8GLUjY/ThG-C3fXoMI/AAAAAAAAI34/N2s5uttNFfY/s400/noimg.jpg';
+            };
+        };
+      document['write']('<div class="featuredpostbig4"><div class="rthumbbox4"><strong></strong><a  href="' + _0x1bd1x6 + '"  title="' + _0x1bd1x7 + '"><div class="rthumbbig4"><div class="imgbox4"><img src="' + _0x1bd1x8 + '"/></div><h2><a href="' + _0x1bd1x6 + '"  title="' + _0x1bd1x7 + '">' + _0x1bd1x7 + '</a></h2></div></a></div></div>');
+    };
+};
+
+//]]>
+</script>
+<script type="text/javascript">
+var thumbnail_mode = "yes"; //yes -with thumbnail, no -no thumbnail
+summary_noimg = 198; //summary length when no image
+summary_img = 198; //summary length when with image
+img_thumb_height = 160;
+img_thumb_width = 300;
+</script>
+<script>
+      $(document).ready(function(){
+  $(".rthumbbox3:first").addClass("firstka3");
+  $(".rthumbbox2:first").addClass("firstka2");
+  $(".rthumbbox:first").addClass("firstka");
+ $("#menu-main").tinyNav({
+  active: 'selected', // String: Set the "active" class
+  header: 'Navigation', // String: Specify text for "header" and show header instead of the active item
+  label: '' 
+});
+
+});
+    </script>
+<script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/related-post.js" type="text/javascript"></script>
+<script type="text/javascript">
+var defaultnoimage="http://3.bp.blogspot.com/-PpjfsStySz0/UF91FE7rxfI/AAAAAAAACl8/092MmUHSFQ0/s1600/no_image.jpg";
+var maxresults=3;
+var splittercolor="#DDDDDD";
+var relatedpoststitle="Related Posts";
+</script>
+<style>
+.post-outer {
+margin-top: -40px;
+}
+.post-title {
+font-size: 30px;
+}
+.post-body {
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 1px;
+}
+  </style>
+<script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/recent-post.js"></script>
+<script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/tinynav.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49603762-1', 'scrapillars.blogspot.com');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">var a="&m=1",d="(^|&)m=",e="?",f="?m=1";function g(){var b=window.location.href,c=b.split(e);switch(c.length){case 1:return b+f;case 2:return 0<=c[1].search(d)?null:b+a;default:return null}}var h=navigator.userAgent;if(-1!=h.indexOf("Mobile")&&-1!=h.indexOf("WebKit")&&-1==h.indexOf("iPad")||-1!=h.indexOf("Opera Mini")||-1!=h.indexOf("IEMobile")){var k=g();k&&window.location.replace(k)};
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script><script type="text/javascript" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/google_top_exp.js"></script><style>.gc-bubbleDefault{background-color:transparent !important;text-align:left;padding:0 !important;margin:0 !important;border:0 !important;table-layout:auto !important}.gc-reset{background-color:transparent !important;border:0 !important;padding:0 !important;margin:0 !important;text-align:left}.pls-bubbleTop{border-bottom:1px solid #ccc !important}.pls-topTail,.pls-vertShimLeft,.pls-contentLeft{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/border_3.gif) !important}.pls-topTail{background-repeat:repeat-x !important;background-position:bottom !important}.pls-vertShim{background-color:#fff !important;text-align:right}.tbl-grey .pls-vertShim{background-color:#f5f5f5 !important}.pls-vertShimLeft{background-repeat:repeat-y !important;background-position:right !important;height:4px}.pls-vertShimRight{height:4px}.pls-confirm-container .pls-vertShim{background-color:#fff3c2 !important}.pls-contentWrap{background-color:#fff !important;position:relative !important;vertical-align:top}.pls-contentLeft{background-repeat:repeat-y;background-position:right;vertical-align:top}.pls-dropRight{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropR_3.png) !important;background-repeat:repeat-y !important;vertical-align:top}.pls-vert,.pls-tailleft,.pls-dropTR .pls-dropBR,.pls-dropBL,.pls-vert img{vertical-align:top}.pls-dropBottom{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropB_3.png) !important;background-repeat:repeat-x !important;width:100%;vertical-align:top}.pls-topLeft{background:inherit !important;text-align:right;vertical-align:bottom}.pls-topRight{background:inherit !important;text-align:left;vertical-align:bottom}.pls-bottomLeft{background:inherit !important;text-align:right}.pls-bottomRight{background:inherit !important;text-align:left;vertical-align:top}.pls-tailtop,.pls-tailright,.pls-tailbottom,.pls-tailleft{display:none;position:relative}.pls-tailbottom,.pls-tailtop,.pls-tailright,.pls-tailleft,.pls-dropTR,.pls-dropBR,.pls-dropBL{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite_3.png) !important;background-repeat:no-repeat}.tbl-grey .pls-tailbottom,.tbl-grey .pls-tailtop,.tbl-grey .pls-tailright,.tbl-grey .pls-tailleft,.tbl-grey .pls-dropTR,.tbl-grey .pls-dropBR,.tbl-grey .pls-dropBL{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite-grey.png) !important}.pls-tailbottom{background-position:-23px 0}.pls-confirm-container .pls-tailbottom{background-position:-23px -10px}.pls-tailtop{background-position:-19px -20px}.pls-tailright{background-position:0 0}.pls-tailleft{background-position:-10px 0}.pls-tailtop{vertical-align:top}.gc-bubbleDefault td{line-height:0;font-size:0}.pls-topLeft img,.pls-topRight img,.pls-tailbottom{vertical-align:bottom}.pls-bottomLeft img,.bubbleDropTR,.pls-dropBottomL img,.pls-dropBottom img,.pls-dropBottomR img,.pls-bottomLeft{vertical-align:top}.pls-dropTR{background-position:0 -22px}.pls-dropBR{background-position:0 -27px}.pls-dropBL{background-position:0 -16px}.pls-spacertop,.pls-spacerright,.pls-spacerbottom,.pls-spacerleft{position:static !important}.pls-spinner{bottom:0;position:absolute;left:0;margin:auto;right:0;top:0} </style><script type="text/javascript" charset="utf-8" async="" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/button.6662c978addbbc50f3713c9d8130a348.js"></script></head>
+<body class="" cz-shortcut-listen="true">
+<div class="navbar section" id="navbar"><div class="widget Navbar" id="Navbar1"><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="" tabindex="0" vspace="0" width="100%" id="navbar-iframe" name="navbar-iframe" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/navbar.html"></iframe></div>
+<script type="text/javascript" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/plusone.js" gapi_processed="true"></script>
+<script type="text/javascript">
+        gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+          if (gapi.iframes && gapi.iframes.getContext) {
+            gapi.iframes.getContext().openChild({
+                url: 'https://www.blogger.com/navbar.g?targetBlogID\0753334607182569568968\46blogName\75Scrapillars+-+following+technology\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75LIGHT\46layoutType\75LAYOUTS\46searchRoot\75http://scrapillars.blogspot.com/search\46blogLocale\75en_GB\46v\0752\46homepageUrl\75http://scrapillars.blogspot.com/\46targetPostID\758524800029747853602\46blogPostOrPageUrl\75http://scrapillars.blogspot.com/2014/02/how-to-change-project-facet-in-eclipse.html\46vt\75-620683269425507294',
+                where: document.getElementById("navbar-iframe-container"),
+                id: "navbar-iframe"
+            });
+          }
+        });
+      </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div class="body-fauxcolumns">
+<div class="fauxcolumn-outer body-fauxcolumn-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="content-fauxcolumns">
+<div class="fauxcolumn-outer content-fauxcolumn-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<div class="content-outer">
+<div id="top-nav">
+<div class="section" id="navtop">
+<ul id="menu-main1">
+<li class="selected"><a href="http://scrapillars.blogspot.ch/">Home</a></li>
+<li><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">About</a></li>
+<li><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Contact</a></li>
+</ul>
+</div>
+<div id="mydate">
+<script type="text/javascript">
+/*<![CDATA[*/
+    					     var mydate=new Date()
+							 var year=mydate.getYear()
+                             if (year < 1000)
+                               year+=1900
+							 var day=mydate.getDay()
+							 var month=mydate.getMonth()
+							 var daym=mydate.getDate()
+							 if (daym<10)
+							 daym="0"+daym
+							 var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+							 var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+							 document.write(""+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"")
+/*]]>*/
+
+  </script>Saturday, March 05, 2016</div>
+</div>
+<div class="content-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left content-fauxborder-left">
+<div class="fauxborder-right content-fauxborder-right"></div>
+<div class="content-inner">
+<header>
+<div class="header-outer">
+<div class="header-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left header-fauxborder-left">
+<div class="fauxborder-right header-fauxborder-right"></div>
+<div class="region-inner header-inner">
+<div class="header section" id="header"><div class="widget Header" id="Header1">
+<div id="header-inner">
+<div class="titlewrapper">
+<h1 class="title">
+<a href="http://scrapillars.blogspot.ch/">Scrapillars - following technology</a>
+</h1>
+</div>
+<div class="descriptionwrapper">
+<p class="description"><span>
+</span></p>
+</div>
+</div>
+</div></div>
+<div class="section" id="header-right">
+</div>
+<div style="clear: both;"></div>
+</div>
+</div>
+<div class="header-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</header>
+<nav class="" id="main-nav" style="top: 0px;">
+<div class="container">
+<div class="main-menu">
+<ul class="menu" id="menu-main">
+<li class="green"><a class="home" href="http://scrapillars.blogspot.ch/">Home</a></li>
+<li class="red"><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Business</a>
+<ul class="sub-menu">
+<li><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Post With Featured Image</a></li>
+<li><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Post With Slider</a></li>
+<li><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Post with SoundCloud</a></li>
+<li><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Post With Video</a></li>
+</ul>
+</li>
+<li class="yellow"><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Technology</a>
+<ul class="sub-menu">
+<li><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Authors</a></li>
+<li><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Sitemap</a></li>
+<li><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Tags</a></li>
+<li><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Timeline</a></li>
+</ul>
+</li>
+<li class="green-2"><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Life &amp; Style</a>
+</li>
+<li class="orange"><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Games</a>
+<ul class="sub-menu">
+<li><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Full Width</a></li>
+<li><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Right Sidebar</a></li>
+<li><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Left SIdebar</a></li>
+</ul>
+</li>
+<li class="pink"><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Sports</a>
+<ul class="sub-menu">
+<li><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Stars</a></li>
+<li><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Points</a></li>
+<li><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Percent</a></li>
+<li><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">in The Top</a></li>
+</ul>
+</li>
+<li class="green-3"><a href="http://scrapillars.blogspot.ch/2014/02/your-link-here">Error Page</a></li>
+<li id="ranpost"><a href="http://scrapillars.blogspot.ch/2014/02/how-to-change-project-facet-in-eclipse.html#random" rel="15"></a></li>
+<script type="text/javascript">
+/*<![CDATA[*/
+function showLucky(root){ var feed = root.feed; var entries = feed.entry || []; var entry = feed.entry[0]; for (var j = 0; j < entry.link.length; ++j){if (entry.link[j].rel == 'alternate'){window.location = entry.link[j].href;}}} function fetchLuck(luck){ script = document.createElement('script'); script.src = '/feeds/posts/summary?start-index='+luck+'&max-results=1&alt=json-in-script&callback=showLucky'; script.type = 'text/javascript'; document.getElementsByTagName('head')[0].appendChild(script); } function feelingLucky(root){ var feed = root.feed; var total = parseInt(feed.openSearch$totalResults.$t,10); var luckyNumber = Math.floor(Math.random()*total);luckyNumber++; a = document.createElement('a'); a.href = '#random'; a.rel = luckyNumber; a.onclick = function(){fetchLuck(this.rel);}; document.getElementById('ranpost').appendChild(a); } </script><script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/summary">
+/*]]>*/
+</script>
+</ul>
+</div>
+</div>
+</nav>
+<br>
+<div class="head_brnews">
+<div class="breaking-news"><div class="samazhlo">Breaking News</div>
+<script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/autoscroll.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var nMaxPosts =6;
+        var nWidth = 100;
+        var nScrollDelay = 60;
+        var sDirection = "left";
+        var sOpenLinkLocation = "N";
+        var sBulletChar = ">>";
+</script>
+<script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/default" type="text/javascript"></script>
+</div>
+<!--Social Icons Started -->
+<div id="social">
+<a class="facebook" href="http://www.facebook.com/"></a>
+<a class="twitter" href="https://twitter.com/"></a>
+<a class="flickr" href="http://www.flickr.com/"></a>
+<a class="pinterest" href="http://pinterest.com/"></a>
+<a class="googleplus" href="https://plus.google.com/"></a>
+<a class="vimeo" href="http://vimeo.com/"></a>
+<a class="youtube" href="http://www.youtube.com/"></a>
+<a class="mail" href="mailto:info@SBTemplates.com"></a>
+</div>
+<!--Social Icons End-->
+</div>
+<div class="tabs-outer">
+<div class="tabs-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left tabs-fauxborder-left">
+<div class="fauxborder-right tabs-fauxborder-right"></div>
+<div class="region-inner tabs-inner">
+<div class="tabs section" id="crosscol"></div>
+<div class="tabs section" id="crosscol-overflow"></div>
+</div>
+</div>
+<div class="tabs-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="main-outer">
+<div class="main-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left main-fauxborder-left">
+<div class="fauxborder-right main-fauxborder-right"></div>
+<div class="region-inner main-inner">
+<div class="columns fauxcolumns">
+<div class="fauxcolumn-outer fauxcolumn-center-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="fauxcolumn-outer fauxcolumn-left-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="fauxcolumn-outer fauxcolumn-right-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class="columns-inner">
+<div class="column-center-outer">
+<div class="column-center-inner">
+<div class="main section" id="main">
+<div class="widget Blog" id="Blog1">
+<div class="blog-posts hfeed">
+
+          <div class="date-outer">
+        
+<h2 class="date-header"><span>Sunday, 23 February 2014</span></h2>
+
+          <div class="date-posts">
+        
+<div class="post-outer">
+<div class="post hentry" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+<meta content="http://1.bp.blogspot.com/-wvMsPk1BreA/UwrkQ4dtbAI/AAAAAAAAAAs/j6koNmsNnaw/s1600/navigation.png" itemprop="image_url">
+<meta content="3334607182569568968" itemprop="blogId">
+<meta content="8524800029747853602" itemprop="postId">
+<a name="8524800029747853602"></a>
+<h2 class="post-title entry-title" itemprop="name">
+How to change Project Facet in Eclipse
+</h2>
+<div class="post-header">
+<div class="post-header-line-1"></div>
+</div>
+<div class="post-body entry-content" id="post-body-8524800029747853602" itemprop="description articleBody">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<br>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+This post is about how to change version of project facet Dynamic Web Module to 3.0 or any other in Eclipse!</h1>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+&nbsp;</h1>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+Open web.xml from project structure</h1>
+<pre class="lang-java prettyprint prettyprinted" style="-webkit-text-stroke-width: 0px; background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: Consolas, Menlo, Monaco, &#39;Lucida Console&#39;, &#39;Liberation Mono&#39;, &#39;DejaVu Sans Mono&#39;, &#39;Bitstream Vera Sans Mono&#39;, &#39;Courier New&#39;, monospace, serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.804800033569336px; margin: 0px 0px 10px; max-height: 600px; orphans: auto; overflow: auto; padding: 5px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; widows: auto; width: auto; word-spacing: 0px; word-wrap: normal;"><code style="background-color: #eeeeee; background-position: initial initial; background-repeat: initial initial; border: 0px; font-family: Consolas, Menlo, Monaco, &#39;Lucida Console&#39;, &#39;Liberation Mono&#39;, &#39;DejaVu Sans Mono&#39;, &#39;Bitstream Vera Sans Mono&#39;, &#39;Courier New&#39;, monospace, serif; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline; white-space: inherit;"><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">&lt;</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">web</span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">-</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">app xmlns</span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">=</span><span class="str" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: maroon; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">"http://java.sun.com/xml/ns/javaee"</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;"> xmlns</span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">:</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">xsi</span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">=</span><span class="str" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: maroon; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">"http://www.w3.org/2001/XMLSchema-instance"</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">
+    xsi</span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">:</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">schemaLocation</span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">=</span><span class="str" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: maroon; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">"</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">http</span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">:</span><span class="com" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: grey; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">//java.sun.com/xml/ns/javaee </span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">
+          http</span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">:</span><span class="com" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: grey; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">//java.sun.com/xml/ns/javaee/web-app_3_0.xsd"</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">
+    version</span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">=</span><span class="str" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: maroon; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">"3.0"</span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">&gt;</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">
+    </span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">&lt;</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">display</span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">-</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">name</span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">&gt;</span><span class="typ" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: #2b91af; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">Servlet</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;"> </span><span class="lit" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: maroon; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">3.0</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;"> </span><span class="typ" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: #2b91af; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">Web</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;"> </span><span class="typ" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: #2b91af; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">Application</span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">&lt;/</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">display</span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">-</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">name</span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">&gt;</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">
+</span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">&lt;/</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">web</span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">-</span><span class="pln" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">app</span><span class="pun" style="background-color: transparent; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-size: 14px; margin: 0px; padding: 0px; vertical-align: baseline;">&gt;</span></code></pre>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+&nbsp;</h1>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+and update web.xml file</h1>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+for example change version = "2.5"</h1>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+<br></h1>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+Also change the org.eclipse.wst.common.project.facet.core.xml file from your project .settings file</h1>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+Follow the steps</h1>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+1. Window &gt; Show View &gt; Other &gt; General &gt; Navigator</h1>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/navigation.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/navigation.png" height="320" width="227"></a></div>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+<br></h1>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+<span style="-webkit-text-stroke-width: 0px; background-color: white; color: black; display: inline !important; float: none; font-family: Arial, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 17.804800033569336px; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px;"> </span></h1>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+2. There is a .settings folder under your project directory</h1>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+&nbsp;<div class="separator" style="clear: both; text-align: center;">
+<a href="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/pjt+structure.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/pjt+structure.png" height="267" width="320"></a></div>
+</h1>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+3. Change the dynamic web module version in this line to 2.5</h1>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+4.Change the Java version in this line to 1.5 or higher&nbsp;</h1>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+&nbsp;</h1>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+Now refresh your project and get set to run on your server.&nbsp; </h1>
+<br>
+<br>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+<br></h1>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+<br></h1>
+<h1 itemprop="name" style="-webkit-text-stroke-width: 0px; background-color: white; background-position: initial initial; background-repeat: initial initial; border: 0px; color: black; font-family: &#39;Trebuchet MS&#39;, &#39;Liberation Sans&#39;, &#39;DejaVu Sans&#39;, sans-serif; font-size: 23px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.3; margin: 0px 0px 7px; orphans: auto; padding: 0px; text-align: left; text-indent: 0px; text-transform: none; vertical-align: baseline; white-space: normal; widows: auto; word-spacing: 0px;">
+<br></h1>
+</div>
+<div style="clear: both;"></div>
+</div>
+<div class="share-post">
+<span class="share-text">Share !</span>
+<span class="likebtn"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/like.html" style="border:none; overflow:hidden; width:90px; height:21px;"></iframe></span>
+<span class="tweetbtn">
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/tweet_button.b212c8422d3b3079acc6183618b32f10.en.html" style="position: absolute; visibility: hidden; width: 0px; height: 0px;"></iframe><a class="twitter-share-button" data-count="horizontal" data-related="" data-text="How to change Project Facet in Eclipse" data-url="http://scrapillars.blogspot.ch/2014/02/how-to-change-project-facet-in-eclipse.html" data-via="bloglordhtml" href="http://twitter.com/share" data-twitter-extracted-i1457197567476904866="true">Tweet</a></span>
+<script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/widgets.js" type="text/javascript"></script>
+<span class="plusbtn">
+<script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/plusone(1).js" type="text/javascript" gapi_processed="true"></script>
+<div id="___plusone_0" style="position: absolute; width: 450px; left: -10000px;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none" tabindex="0" vspace="0" width="100%" id="I0_1457197567919" name="I0_1457197567919" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/fastbutton.html" data-gapiattached="true"></iframe></div><g:plusone href="http://scrapillars.blogspot.ch/2014/02/how-to-change-project-facet-in-eclipse.html" size="medium" data-gapiscan="true" data-onload="true" data-gapistub="true"></g:plusone>
+</span>
+</div>
+<div id="related-posts">
+<script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/Eclipse" type="text/javascript"></script>
+<script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/J2ee project" type="text/javascript"></script>
+<script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/Project Facet" type="text/javascript"></script>
+<script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/Server" type="text/javascript"></script>
+<script type="text/javascript">
+removeRelatedDuplicates_thumbs();
+printRelatedLabels_thumbs("http://scrapillars.blogspot.ch/2014/02/how-to-change-project-facet-in-eclipse.html");
+</script>
+</div><div style="clear:both"></div>
+<div class="post-footer">
+<div class="post-footer-line post-footer-line-1"><span class="post-author vcard">
+Posted by
+<span class="fn" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+<meta content="https://plus.google.com/116694047145069054119" itemprop="url">
+<a class="g-profile" href="https://plus.google.com/116694047145069054119" rel="author" title="author profile" data-gapiscan="true" data-onload="true" data-gapiattached="true">
+<span itemprop="name">pandu Brains</span>
+</a>
+</span>
+</span>
+<span class="post-timestamp">
+at
+<meta content="http://scrapillars.blogspot.com/2014/02/how-to-change-project-facet-in-eclipse.html" itemprop="url">
+<a class="timestamp-link" href="http://scrapillars.blogspot.ch/2014/02/how-to-change-project-facet-in-eclipse.html" rel="bookmark" title="permanent link"><abbr class="published" itemprop="datePublished" title="2014-02-23T22:21:00-08:00">22:21</abbr></a>
+</span>
+<span class="post-comment-link">
+</span>
+<span class="post-icons">
+<span class="item-control blog-admin pid-566690917">
+<a href="https://www.blogger.com/post-edit.g?blogID=3334607182569568968&amp;postID=8524800029747853602&amp;from=pencil" title="Edit Post">
+<img alt="" class="icon-action" height="18" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/icon18_edit_allbkg.gif" width="18">
+</a>
+</span>
+</span>
+<div class="post-share-buttons goog-inline-block">
+<a class="goog-inline-block share-button sb-email" href="https://www.blogger.com/share-post.g?blogID=3334607182569568968&amp;postID=8524800029747853602&amp;target=email" target="_blank" title="Email This"><span class="share-button-link-text">Email This</span></a><a class="goog-inline-block share-button sb-blog" href="https://www.blogger.com/share-post.g?blogID=3334607182569568968&amp;postID=8524800029747853602&amp;target=blog" onclick="window.open(this.href, &quot;_blank&quot;, &quot;height=270,width=475&quot;); return false;" target="_blank" title="BlogThis!"><span class="share-button-link-text">BlogThis!</span></a><a class="goog-inline-block share-button sb-twitter" href="https://www.blogger.com/share-post.g?blogID=3334607182569568968&amp;postID=8524800029747853602&amp;target=twitter" target="_blank" title="Share to Twitter"><span class="share-button-link-text">Share to Twitter</span></a><a class="goog-inline-block share-button sb-facebook" href="https://www.blogger.com/share-post.g?blogID=3334607182569568968&amp;postID=8524800029747853602&amp;target=facebook" onclick="window.open(this.href, &quot;_blank&quot;, &quot;height=430,width=640&quot;); return false;" target="_blank" title="Share to Facebook"><span class="share-button-link-text">Share to Facebook</span></a><div class="goog-inline-block dummy-container"><div id="___plusone_1" style="position: absolute; width: 450px; left: -10000px;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none" tabindex="0" vspace="0" width="100%" id="I1_1457197567929" name="I1_1457197567929" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/fastbutton(1).html" data-gapiattached="true"></iframe></div><g:plusone source="blogger:blog:plusone" href="http://scrapillars.blogspot.com/2014/02/how-to-change-project-facet-in-eclipse.html" size="medium" width="300" annotation="inline" data-gapiscan="true" data-onload="true" data-gapistub="true"></g:plusone></div>
+</div>
+</div>
+<div class="post-footer-line post-footer-line-2"><span class="post-labels">
+Labels:
+<a href="http://scrapillars.blogspot.ch/search/label/Eclipse" rel="tag">Eclipse</a>,
+<a href="http://scrapillars.blogspot.ch/search/label/J2ee%20project" rel="tag">J2ee project</a>,
+<a href="http://scrapillars.blogspot.ch/search/label/Project%20Facet" rel="tag">Project Facet</a>,
+<a href="http://scrapillars.blogspot.ch/search/label/Server" rel="tag">Server</a>
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3"><span class="post-location">
+</span>
+</div>
+</div>
+</div>
+<div class="comments" id="comments">
+<a name="comments"></a>
+<h4>2 comments:</h4>
+<div class="comments-content">
+<script async="async" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/comments.js" type="text/javascript"></script>
+<script type="text/javascript">
+    (function() {
+      var items = [{'id': '6537539402471099123', 'body': 'Thanks a lot, you solved my problem', 'timestamp': '1422541238138', 'permalink': 'http://scrapillars.blogspot.com/2014/02/how-to-change-project-facet-in-eclipse.html?showComment\0751422541238138#c6537539402471099123', 'author': {'name': 'Kennedy Rodrigues', 'avatarUrl': '//lh5.googleusercontent.com/-KX1FTGzwYU8/AAAAAAAAAAI/AAAAAAAAEHQ/sdzZBDIpC7A/s35-c/photo.jpg', 'profileUrl': 'https://www.blogger.com/profile/01183736704739633405'}, 'displayTime': '29 January 2015 at 06:20', 'deleteclass': 'item-control blog-admin pid-297659604'}, {'id': '7979911734221519933', 'body': 'Thanks a lot my friend!....It saved my time...', 'timestamp': '1424884275346', 'permalink': 'http://scrapillars.blogspot.com/2014/02/how-to-change-project-facet-in-eclipse.html?showComment\0751424884275346#c7979911734221519933', 'author': {'name': 'Nagendra Anthati', 'avatarUrl': '//img2.blogblog.com/img/b16-rounded.gif', 'profileUrl': 'https://www.blogger.com/profile/11294115400528476849'}, 'displayTime': '25 February 2015 at 09:11', 'deleteclass': 'item-control blog-admin pid-643409050'}];
+      var msgs = {'loadMore': 'Load more...', 'loading': 'Loading...', 'loaded': 'No more.', 'addComment': 'Add comment', 'reply': 'Reply', 'delete': 'Delete'};
+      var config = {'blogId': '3334607182569568968', 'postId': '8524800029747853602', 'feed': 'http://scrapillars.blogspot.com/feeds/8524800029747853602/comments/default', 'authorName': 'pandu Brains', 'authorUrl': 'https://www.blogger.com/profile/13959846169063680290', 'baseUri': 'https://www.blogger.com', 'maxThreadDepth': 2};
+
+// <![CDATA[
+      var cursor = null;
+      if (items && items.length > 0) {
+        cursor = parseInt(items[items.length - 1].timestamp) + 1;
+      }
+
+      var bodyFromEntry = function(entry) {
+        if (entry.gd$extendedProperty) {
+          for (var k in entry.gd$extendedProperty) {
+            if (entry.gd$extendedProperty[k].name == 'blogger.contentRemoved') {
+              return '<span class="deleted-comment">' + entry.content.$t + '</span>';
+            }
+          }
+        }
+        return entry.content.$t;
+      }
+
+      var parse = function(data) {
+        cursor = null;
+        var comments = [];
+        if (data && data.feed && data.feed.entry) {
+          for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
+            var comment = {};
+            // comment ID, parsed out of the original id format
+            var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
+            comment.id = id ? id[2] : null;
+            comment.body = bodyFromEntry(entry);
+            comment.timestamp = Date.parse(entry.published.$t) + '';
+            if (entry.author && entry.author.constructor === Array) {
+              var auth = entry.author[0];
+              if (auth) {
+                comment.author = {
+                  name: (auth.name ? auth.name.$t : undefined),
+                  profileUrl: (auth.uri ? auth.uri.$t : undefined),
+                  avatarUrl: (auth.gd$image ? auth.gd$image.src : undefined)
+                };
+              }
+            }
+            if (entry.link) {
+              if (entry.link[2]) {
+                comment.link = comment.permalink = entry.link[2].href;
+              }
+              if (entry.link[3]) {
+                var pid = /.*comments\/default\/(\d+)\?.*/.exec(entry.link[3].href);
+                if (pid && pid[1]) {
+                  comment.parentId = pid[1];
+                }
+              }
+            }
+            comment.deleteclass = 'item-control blog-admin';
+            if (entry.gd$extendedProperty) {
+              for (var k in entry.gd$extendedProperty) {
+                if (entry.gd$extendedProperty[k].name == 'blogger.itemClass') {
+                  comment.deleteclass += ' ' + entry.gd$extendedProperty[k].value;
+                } else if (entry.gd$extendedProperty[k].name == 'blogger.displayTime') {
+                  comment.displayTime = entry.gd$extendedProperty[k].value;
+                }
+              }
+            }
+            comments.push(comment);
+          }
+        }
+        return comments;
+      };
+
+      var paginator = function(callback) {
+        if (hasMore()) {
+          var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
+          if (cursor) {
+            url += '&published-min=' + new Date(cursor).toISOString();
+          }
+          window.bloggercomments = function(data) {
+            var parsed = parse(data);
+            cursor = parsed.length < 50 ? null
+                : parseInt(parsed[parsed.length - 1].timestamp) + 1
+            callback(parsed);
+            window.bloggercomments = null;
+          }
+          url += '&callback=bloggercomments';
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = url;
+          document.getElementsByTagName('head')[0].appendChild(script);
+        }
+      };
+      var hasMore = function() {
+        return !!cursor;
+      };
+      var getMeta = function(key, comment) {
+        if ('iswriter' == key) {
+          var matches = !!comment.author
+              && comment.author.name == config.authorName
+              && comment.author.profileUrl == config.authorUrl;
+          return matches ? 'true' : '';
+        } else if ('deletelink' == key) {
+          return config.baseUri + '/delete-comment.g?blogID='
+               + config.blogId + '&postID=' + comment.id;
+        } else if ('deleteclass' == key) {
+          return comment.deleteclass;
+        }
+        return '';
+      };
+
+      var replybox = null;
+      var replyUrlParts = null;
+      var replyParent = undefined;
+
+      var onReply = function(commentId, domId) {
+        if (replybox == null) {
+          // lazily cache replybox, and adjust to suit this style:
+          replybox = document.getElementById('comment-editor');
+          if (replybox != null) {
+            replybox.height = '250px';
+            replybox.style.display = 'block';
+            replyUrlParts = replybox.src.split('#');
+          }
+        }
+        if (replybox && (commentId !== replyParent)) {
+          document.getElementById(domId).insertBefore(replybox, null);
+          replybox.src = replyUrlParts[0]
+              + (commentId ? '&parentID=' + commentId : '')
+              + '#' + replyUrlParts[1];
+          replyParent = commentId;
+        }
+      };
+
+      var hash = (window.location.hash || '#').substring(1);
+      var startThread, targetComment;
+      if (/^comment-form_/.test(hash)) {
+        startThread = hash.substring('comment-form_'.length);
+      } else if (/^c[0-9]+$/.test(hash)) {
+        targetComment = hash.substring(1);
+      }
+
+      // Configure commenting API:
+      var configJso = {
+        'maxDepth': config.maxThreadDepth
+      };
+      var provider = {
+        'id': config.postId,
+        'data': items,
+        'loadNext': paginator,
+        'hasMore': hasMore,
+        'getMeta': getMeta,
+        'onReply': onReply,
+        'rendered': true,
+        'initComment': targetComment,
+        'initReplyThread': startThread,
+        'config': configJso,
+        'messages': msgs
+      };
+
+      var render = function() {
+        if (window.goog && window.goog.comments) {
+          var holder = document.getElementById('comment-holder');
+          window.goog.comments.render(holder, provider);
+        }
+      };
+
+      // render now, or queue to render when library loads:
+      if (window.goog && window.goog.comments) {
+        render();
+      } else {
+        window.goog = window.goog || {};
+        window.goog.comments = window.goog.comments || {};
+        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
+        window.goog.comments.loadQueue.push(render);
+      }
+    })();
+// ]]>
+</script>
+<div id="comment-holder">
+
+<div id="bc_0_3C" kind="c"><div id="bc_0_3CT"><div id="bc_0_2T" class="comment-thread" kind="r" t="0" u="0"><ol id="bc_0_2TB"><li id="bc_0_0B" class="comment" kind="b"><div class="avatar-image-container"><img src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/photo.jpg"></div><div id="c6537539402471099123" class="comment-block"><div id="bc_0_0M" class="comment-header" kind="m"><cite class="user"><a rel="nofollow" href="https://www.blogger.com/profile/01183736704739633405">Kennedy Rodrigues</a></cite><span class="icon user"></span><span class="datetime secondary-text"><a rel="nofollow" href="http://scrapillars.blogspot.com/2014/02/how-to-change-project-facet-in-eclipse.html?showComment=1422541238138#c6537539402471099123">29 January 2015 at 06:20</a></span></div><p id="bc_0_0MC" class="comment-content">Thanks a lot, you solved my problem</p><span id="bc_0_0MN" class="comment-actions secondary-text" kind="m"><a kind="i" href="javascript:;" target="_self" o="r">Reply</a><span class="item-control blog-admin pid-297659604"><a o="d" target="_self" href="https://www.blogger.com/delete-comment.g?blogID=3334607182569568968&amp;postID=6537539402471099123">Delete</a></span></span></div><div id="bc_0_0BR" class="comment-replies"></div><div id="bc_0_0B_box" class="comment-replybox-single"></div></li><li id="bc_0_1B" class="comment" kind="b"><div class="avatar-image-container"><img src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/b16-rounded.gif"></div><div id="c7979911734221519933" class="comment-block"><div id="bc_0_1M" class="comment-header" kind="m"><cite class="user"><a rel="nofollow" href="https://www.blogger.com/profile/11294115400528476849">Nagendra Anthati</a></cite><span class="icon user"></span><span class="datetime secondary-text"><a rel="nofollow" href="http://scrapillars.blogspot.com/2014/02/how-to-change-project-facet-in-eclipse.html?showComment=1424884275346#c7979911734221519933">25 February 2015 at 09:11</a></span></div><p id="bc_0_1MC" class="comment-content">Thanks a lot my friend!....It saved my time...</p><span id="bc_0_1MN" class="comment-actions secondary-text" kind="m"><a kind="i" href="javascript:;" target="_self" o="r">Reply</a><span class="item-control blog-admin pid-643409050"><a o="d" target="_self" href="https://www.blogger.com/delete-comment.g?blogID=3334607182569568968&amp;postID=7979911734221519933">Delete</a></span></span></div><div id="bc_0_1BR" class="comment-replies"></div><div id="bc_0_1B_box" class="comment-replybox-single"></div></li></ol><div id="bc_0_2I" class="continue" kind="ci" style="display: none;"><a href="javascript:;" target="_self">Add comment</a></div><div id="bc_0_2T_box" class="comment-replybox-thread"><iframe allowtransparency="true" class="blogger-iframe-colorize blogger-comment-from-post" frameborder="0" height="250px" id="comment-editor" name="comment-editor" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/comment-iframe.html" width="100%" style="display: block;"></iframe></div><div id="bc_0_2L" class="loadmore loaded" kind="rb"><a href="javascript:;" target="_self">Load more...</a></div></div></div></div></div>
+</div>
+<p class="comment-footer">
+</p><div class="comment-form">
+<a name="comment-form"></a>
+<p>
+</p>
+<a href="https://www.blogger.com/comment-iframe.g?blogID=3334607182569568968&amp;postID=8524800029747853602&amp;blogspotRpcToken=4082951" id="comment-editor-src"></a>
+
+<script type="text/javascript" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/2063468179-comment_from_post_iframe.js"></script>
+<script type="text/javascript">
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html');
+    </script>
+</div>
+<p></p>
+<div id="backlinks-container">
+<div id="Blog1_backlinks-container">
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+</div>
+<div class="post-feeds">
+<div class="feed-links">
+Subscribe to:
+<a class="feed-link" href="http://scrapillars.blogspot.com/feeds/8524800029747853602/comments/default" target="_blank" type="application/atom+xml">Post Comments (Atom)</a>
+</div>
+</div>
+<script type="text/javascript">window.___gcfg = {'lang': 'en_GB'};</script>
+</div></div>
+</div>
+</div>
+<div class="column-left-outer">
+<div class="column-left-inner">
+<aside>
+</aside>
+</div>
+</div>
+<div class="column-right-outer">
+<div class="column-right-inner">
+<aside>
+<div id="search">
+<form action="http://scrapillars.blogspot.ch/search" class="searchform" method="get">
+<input name="q" onblur="if(this.value == &#39;&#39;) { this.value = &#39;Search...&#39;; }" onfocus="if(this.value == &#39;Search...&#39;) { this.value = &#39;&#39;; }" tabindex="1" type="text" value="Search...">
+<button class="searchbutton" tabindex="2" type="submit"></button>
+</form>
+</div>
+<div class="sidebar section" id="sidebar-right-1">
+<div class="widget PopularPosts" id="PopularPosts1">
+<h2>Popular Posts</h2>
+<div class="widget-content popular-posts">
+<ul>
+<li>
+<div class="item-content">
+<div class="item-thumbnail">
+<a href="http://scrapillars.blogspot.ch/2014/02/how-to-change-project-facet-in-eclipse.html" target="_blank">
+<img alt="" border="0" height="72" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/navigation(1).png" width="72">
+</a>
+</div>
+<div class="item-title"><a href="http://scrapillars.blogspot.ch/2014/02/how-to-change-project-facet-in-eclipse.html">How to change Project Facet in Eclipse</a></div>
+<div class="item-snippet">   This post is about how to change version of project facet Dynamic Web Module to 3.0 or any other in Eclipse!   &nbsp;   Open web.xml from proj...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+<li>
+<div class="item-content">
+<div class="item-thumbnail">
+<a href="http://scrapillars.blogspot.ch/2014/03/social-media-login-with-spring.html" target="_blank">
+<img alt="" border="0" height="72" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/Social-Media.jpg" width="72">
+</a>
+</div>
+<div class="item-title"><a href="http://scrapillars.blogspot.ch/2014/03/social-media-login-with-spring.html">Social Media Login with Spring Application</a></div>
+<div class="item-snippet">     In the good old days users logged in by using the combination of username and password. A growing number of users want to sign in by us...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+<li>
+<div class="item-content">
+<div class="item-thumbnail">
+<a href="http://scrapillars.blogspot.ch/2014/04/how-to-change-project-facet-dynamic-web.html" target="_blank">
+<img alt="" border="0" height="72" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/projectfacet0.png" width="72">
+</a>
+</div>
+<div class="item-title"><a href="http://scrapillars.blogspot.ch/2014/04/how-to-change-project-facet-dynamic-web.html">How to change the project facet Dynamic web module in eclipse</a></div>
+<div class="item-snippet">     Here is another post on changing the dynamic web module version inside eclipse.  This is very easy to change the version of the facet i...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+<li>
+<div class="item-content">
+<div class="item-thumbnail">
+<a href="http://scrapillars.blogspot.ch/2014/04/to-read-data-from-csv-file-need-opencsv.html" target="_blank">
+<img alt="" border="0" height="72" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/xls+table.png" width="72">
+</a>
+</div>
+<div class="item-title"><a href="http://scrapillars.blogspot.ch/2014/04/to-read-data-from-csv-file-need-opencsv.html">Read CSV File data and skip some rows from CSV file in java</a></div>
+<div class="item-snippet"> To read the data from csv file need an opencsv.jar which helps in an easy way to read the csv file content which even contains data contain...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+<li>
+<div class="item-content">
+<div class="item-thumbnail">
+<a href="http://scrapillars.blogspot.ch/2014/03/how-to-use-ajax-to-load-dynamic-values.html" target="_blank">
+<img alt="" border="0" height="72" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/dropdown.png" width="72">
+</a>
+</div>
+<div class="item-title"><a href="http://scrapillars.blogspot.ch/2014/03/how-to-use-ajax-to-load-dynamic-values.html">How to use Ajax to load dynamic values in select dropdowns</a></div>
+<div class="item-snippet">        There are every day scenarios where one needs to have a working snippet of commonly used functions.   Keep checking the posts here w...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+<li>
+<div class="item-content">
+<div class="item-title"><a href="http://scrapillars.blogspot.ch/2014/04/how-to-get-amazons3-client-object-in.html">How to get the AmazonS3 client object in java</a></div>
+<div class="item-snippet"> It is very important to know and understand the API's provided from AWS.     AWS has provided some API's to connect to it's S3 ...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+<li>
+<div class="item-content">
+<div class="item-title"><a href="http://scrapillars.blogspot.ch/2014/04/split-string-depending-on-delimiter-in.html">Split String depending on delimiter in java</a></div>
+<div class="item-snippet"> To Split a String with delimiter condition and form an array of string   Considering a scenario where in we have read a line from csv or xl...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+<li>
+<div class="item-content">
+<div class="item-title"><a href="http://scrapillars.blogspot.ch/2014/02/cloud-deployment-types.html">Cloud Deployment Types</a></div>
+<div class="item-snippet"> Deployment of Clouds varies on the type of user groups, scale of  users using the clouds, constraints on the usage of resources, usage in  ...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+<li>
+<div class="item-content">
+<div class="item-title"><a href="http://scrapillars.blogspot.ch/2014/04/simple-jdbc-connection-in-java.html">Simple JDBC Connection in java</a></div>
+<div class="item-snippet"> Simple JDBC Connection code in java   This post is to get the simple JDBC connection in java.   &nbsp;// JDBC driver name and database URL  stat...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+<li>
+<div class="item-content">
+<div class="item-title"><a href="http://scrapillars.blogspot.ch/2014/04/spring-context-configuration-for.html">Spring Context Configuration for Database connection</a></div>
+<div class="item-snippet"> Defining Spring context configuration for database connection   This post helps in understanding the database configuration in spring in th...</div>
+</div>
+<div style="clear: both;"></div>
+</li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=3334607182569568968&amp;widgetType=PopularPosts&amp;widgetId=PopularPosts1&amp;action=editWidget&amp;sectionId=sidebar-right-1" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;PopularPosts1&quot;));" target="configPopularPosts1" title="Edit">
+<img alt="" height="18" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget Label" id="Label1">
+<h2>Labels</h2>
+<div class="widget-content list-label-widget-content">
+<ul>
+<li>
+<a dir="ltr" href="http://scrapillars.blogspot.ch/search/label/Ajax">Ajax</a>
+</li>
+<li>
+<a dir="ltr" href="http://scrapillars.blogspot.ch/search/label/Amazon">Amazon</a>
+</li>
+<li>
+<a dir="ltr" href="http://scrapillars.blogspot.ch/search/label/Amazons3%20client">Amazons3 client</a>
+</li>
+<li>
+<a dir="ltr" href="http://scrapillars.blogspot.ch/search/label/AWS">AWS</a>
+</li>
+<li>
+<a dir="ltr" href="http://scrapillars.blogspot.ch/search/label/Code%20Snippets">Code Snippets</a>
+</li>
+<li>
+<a dir="ltr" href="http://scrapillars.blogspot.ch/search/label/dynamic%20drop%20down%20lists">dynamic drop down lists</a>
+</li>
+<li>
+<a dir="ltr" href="http://scrapillars.blogspot.ch/search/label/Eclipse">Eclipse</a>
+</li>
+<li>
+<a dir="ltr" href="http://scrapillars.blogspot.ch/search/label/J2ee%20project">J2ee project</a>
+</li>
+<li>
+<a dir="ltr" href="http://scrapillars.blogspot.ch/search/label/java">java</a>
+</li>
+<li>
+<a dir="ltr" href="http://scrapillars.blogspot.ch/search/label/Project%20Facet">Project Facet</a>
+</li>
+<li>
+<a dir="ltr" href="http://scrapillars.blogspot.ch/search/label/Select%20boxes">Select boxes</a>
+</li>
+<li>
+<a dir="ltr" href="http://scrapillars.blogspot.ch/search/label/Server">Server</a>
+</li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=3334607182569568968&amp;widgetType=Label&amp;widgetId=Label1&amp;action=editWidget&amp;sectionId=sidebar-right-1" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;Label1&quot;));" target="configLabel1" title="Edit">
+<img alt="" height="18" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget Profile" id="Profile1">
+<h2>About Me</h2>
+<div class="widget-content">
+<dl class="profile-datablock">
+<dt class="profile-data">
+<a class="profile-name-link g-profile" href="https://plus.google.com/116694047145069054119" rel="author" style="background-image: url(//www.google.com/images/icons/ui/gprofile_button-16.png);" data-gapiscan="true" data-onload="true" data-gapiattached="true">
+pandu Brains
+</a>
+<br>
+<div id="___follow_0" style="position: absolute; width: 450px; left: -10000px;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position:absolute;top:-10000px;width:450px;margin:0px;border-style:none" tabindex="0" vspace="0" width="100%" id="I2_1457197567939" name="I2_1457197567939" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/follow.html" data-gapiattached="true"></iframe></div><div class="g-follow" data-annotation="bubble" data-height="20" data-href="https://plus.google.com/116694047145069054119" data-gapiscan="true" data-onload="true" data-gapistub="true"></div>
+</dt>
+</dl>
+<a class="profile-link" href="https://plus.google.com/116694047145069054119" rel="author">View my complete profile</a>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=3334607182569568968&amp;widgetType=Profile&amp;widgetId=Profile1&amp;action=editWidget&amp;sectionId=sidebar-right-1" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;Profile1&quot;));" target="configProfile1" title="Edit">
+<img alt="" height="18" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget BlogArchive" id="BlogArchive1">
+<h2>Blog Archive</h2>
+<div class="widget-content">
+<div id="ArchiveList">
+<div id="BlogArchive1_ArchiveList">
+<ul class="hierarchy">
+<li class="archivedate expanded">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy toggle-open">
+
+        ▼&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://scrapillars.blogspot.ch/search?updated-min=2014-01-01T00:00:00-08:00&amp;updated-max=2015-01-01T00:00:00-08:00&amp;max-results=16">
+2014
+</a>
+<span class="post-count" dir="ltr">(16)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://scrapillars.blogspot.ch/2014_04_01_archive.html">
+April
+</a>
+<span class="post-count" dir="ltr">(6)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://scrapillars.blogspot.ch/2014_03_01_archive.html">
+March
+</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate expanded">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy toggle-open">
+
+        ▼&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://scrapillars.blogspot.ch/2014_02_01_archive.html">
+February
+</a>
+<span class="post-count" dir="ltr">(6)</span>
+<ul class="posts">
+<li><a href="http://scrapillars.blogspot.ch/2014/02/community-clouds.html">Community Clouds</a></li>
+<li><a href="http://scrapillars.blogspot.ch/2014/02/hybrid-clouds.html">Hybrid Clouds</a></li>
+<li><a href="http://scrapillars.blogspot.ch/2014/02/public-clouds.html">Public Clouds</a></li>
+<li><a href="http://scrapillars.blogspot.ch/2014/02/private-clouds.html">Private Clouds</a></li>
+<li><a href="http://scrapillars.blogspot.ch/2014/02/cloud-deployment-types.html">Cloud Deployment Types</a></li>
+<li><a href="http://scrapillars.blogspot.ch/2014/02/how-to-change-project-facet-in-eclipse.html">How to change Project Facet in Eclipse</a></li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://scrapillars.blogspot.ch/2014_01_01_archive.html">
+January
+</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=3334607182569568968&amp;widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=editWidget&amp;sectionId=sidebar-right-1" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;BlogArchive1&quot;));" target="configBlogArchive1" title="Edit">
+<img alt="" height="18" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div></div>
+</aside>
+</div>
+</div>
+</div>
+<div style="clear: both"></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class="main-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<footer>
+<div class="footer-outer">
+<div class="footer-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left footer-fauxborder-left">
+<div class="fauxborder-right footer-fauxborder-right"></div>
+<div class="region-inner footer-inner">
+<div class="foot section" id="footer-1"></div>
+<table border="0" cellpadding="0" cellspacing="0" class="section-columns columns-2">
+<tbody>
+<tr>
+<td class="first columns-cell">
+<div class="foot section" id="footer-2-1"></div>
+</td>
+<td class="columns-cell">
+<div class="foot section" id="footer-2-2"></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class="foot section" id="footer-3"><div class="widget Attribution" id="Attribution1">
+<div class="widget-content" style="text-align: center;">
+Powered by <a href="https://www.blogger.com/" target="_blank">Blogger</a>.
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=3334607182569568968&amp;widgetType=Attribution&amp;widgetId=Attribution1&amp;action=editWidget&amp;sectionId=footer-3" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;Attribution1&quot;));" target="configAttribution1" title="Edit">
+<img alt="" height="18" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+</div>
+</div>
+<div class="footer-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</footer>
+<div id="detailfoot"><center>
+  Designed By  <a href="http://www.seobloggertemplates.com/" id="importantlinks"></a></center>
+</div>
+<!-- content -->
+</div>
+</div>
+<div class="content-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div><iframe frameborder="0" id="google_top_static_frame" name="google_top_static_frame" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/blank.html" style="height: 0px; width: 0px; position: absolute;"></iframe>
+<script type="text/javascript">
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+<script src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/autoscroll.js" type="text/javascript"></script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/3731899860-widgets.js"></script>
+<script type="text/javascript" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/plusone.js" gapi_processed="true"></script>
+<script type="text/javascript">
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV2";window['blogger_blog_id'] = '3334607182569568968';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d3334607182569568968','//scrapillars.blogspot.ch/2014/02/how-to-change-project-facet-in-eclipse.html','3334607182569568968');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '3334607182569568968', 'bloggerUrl': 'https://www.blogger.com', 'title': 'Scrapillars - following technology', 'pageType': 'item', 'postId': '8524800029747853602', 'url': 'http://scrapillars.blogspot.ch/2014/02/how-to-change-project-facet-in-eclipse.html', 'canonicalUrl': 'http://scrapillars.blogspot.com/2014/02/how-to-change-project-facet-in-eclipse.html', 'homepageUrl': 'http://scrapillars.blogspot.ch/', 'canonicalHomepageUrl': 'http://scrapillars.blogspot.com/', 'blogspotFaviconUrl': 'http://scrapillars.blogspot.ch/favicon.ico', 'enabledCommentProfileImages': true, 'adultContent': false, 'analyticsAccountNumber': 'UA-49603762-1', 'useUniversalAnalytics': false, 'pageName': 'How to change Project Facet in Eclipse', 'pageTitle': 'Scrapillars - following technology: How to change Project Facet in Eclipse', 'encoding': 'UTF-8', 'locale': 'en_GB', 'localeUnderscoreDelimited': 'en_gb', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Scrapillars - following technology - Atom\42 href\75\42http://scrapillars.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Scrapillars - following technology - RSS\42 href\75\42http://scrapillars.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Scrapillars - following technology - Atom\42 href\75\42https://www.blogger.com/feeds/3334607182569568968/posts/default\42 /\76\n\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Scrapillars - following technology - Atom\42 href\75\42http://scrapillars.blogspot.com/feeds/8524800029747853602/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'postImageThumbnailUrl': 'http://1.bp.blogspot.com/-wvMsPk1BreA/UwrkQ4dtbAI/AAAAAAAAAAs/j6koNmsNnaw/s72-c/navigation.png', 'postImageUrl': 'http://1.bp.blogspot.com/-wvMsPk1BreA/UwrkQ4dtbAI/AAAAAAAAAAs/j6koNmsNnaw/s1600/navigation.png', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { (function(){function c(a){this.t\75{};this.tick\75function(a,c,b){var d\75void 0!\75b?b:(new Date).getTime();this.t[a]\75[d,c];if(void 0\75\75b)try{window.console.timeStamp(\42CSI/\42+a)}catch(e){}};this.tick(\42start\42,null,a)}var a;window.performance\46\46(a\75window.performance.timing);var h\75a?new c(a.responseStart):new c;window.jstiming\75{Timer:c,load:h};if(a){var b\75a.navigationStart,e\75a.responseStart;0\74b\46\46e\76\75b\46\46(window.jstiming.srt\75e-b)}if(a){var d\75window.jstiming.load;0\74b\46\46e\76\75b\46\46(d.tick(\42_wtsrt\42,void 0,b),d.tick(\42wtsrt_\42,\n\42_wtsrt\42,e),d.tick(\42tbsd_\42,\42wtsrt_\42))}try{a\75null,window.chrome\46\46window.chrome.csi\46\46(a\75Math.floor(window.chrome.csi().pageT),d\46\0460\74b\46\46(d.tick(\42_tbnd\42,void 0,window.chrome.csi().startE),d.tick(\42tbnd_\42,\42_tbnd\42,b))),null\75\75a\46\46window.gtbExternal\46\46(a\75window.gtbExternal.pageT()),null\75\75a\46\46window.external\46\46(a\75window.external.pageT,d\46\0460\74b\46\46(d.tick(\42_tbnd\42,void 0,window.external.startE),d.tick(\42tbnd_\42,\42_tbnd\42,b))),a\46\46(window.jstiming.pt\75a)}catch(k){}})();window.tickAboveFold\75function(c){var a\0750;if(c.offsetParent){do a+\75c.offsetTop;while(c\75c.offsetParent)}c\75a;750\76\75c\46\46window.jstiming.load.tick(\42aft\42)};var f\75!1;function g(){f||(f\75!0,window.jstiming.load.tick(\42firstScrollTime\42))}window.addEventListener?window.addEventListener(\42scroll\42,g,!1):window.attachEvent(\42onscroll\42,g);\n })();\74/script\076', 'mobileHeadScript': '', 'ieCssRetrofitLinks': '\74!--[if IE]\76\74script type\75\42text/javascript\42 src\75\42https://www.blogger.com/static/v1/jsbin/1944632664-ieretrofit.js\42\76\74/script\76\n\74![endif]--\076', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/b8b1db2edc023ff5', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sf': 'n', 'tf': ''}}, {'name': 'messages', 'data': {'adsGoHere': 'Ads go here', 'archive': 'Archive', 'blogArchive': 'Blog Archive', 'by': 'By', 'byAuthor': 'By %1', 'byAuthorLink': 'By \74a href\75\42%2\42\76%1\74/a\076', 'deleteBacklink': 'Delete Backlink', 'deleteComment': 'Delete Comment', 'edit': 'Edit', 'emailAddress': 'Email Address', 'getEmailNotifications': 'Get email notifications', 'keepReading': 'Keep reading', 'labels': 'Labels', 'loadMorePosts': 'Load more posts', 'loading': 'Loading...', 'myBlogList': 'My Blog List', 'myFavoriteSites': 'My favourite sites', 'newer': 'Newer', 'newerPosts': 'Newer Posts', 'newest': 'Newest', 'noResultsFound': 'No results found', 'noTitle': 'No title', 'numberOfComments': '{numComments,plural, \0750{No comments}\0751{1 comment}other{# comments}}', 'older': 'Older', 'olderPosts': 'Older Posts', 'oldest': 'Oldest', 'onlyTeamMembersCanComment': 'Note: only a member of this blog may post a comment.', 'popularPosts': 'Popular Posts', 'popularPostsFromThisBlog': 'Popular posts from this blog', 'postAComment': 'Post a Comment', 'postedBy': 'Posted by', 'postedByAuthor': 'Posted by %1', 'postedByAuthorLink': 'Posted by \74a href\75\42%2\42\76%1\74/a\076', 'readMore': 'Read more', 'reportAbuse': 'Report Abuse', 'search': 'Search', 'searchBlog': 'Search blog', 'share': 'Share', 'showAll': 'Show All', 'someOfMyFavoriteSites': 'Some of my favourite sites', 'subscribe': 'Subscribe', 'subscribeToThisBlog': 'Subscribe to this blog', 'theresNothingHere': 'There\47s nothing here.', 'viewAll': 'View all', 'visitProfile': 'Visit profile', 'widgetNotAvailableInPreview': 'This content is not available in blog preview.', 'widgetNotAvailableOnHttps': 'This content isn\47t available over encrypted connections yet.'}}, {'name': 'skin', 'data': {'vars': {}, 'override': ''}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\75classic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\75flipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\75magazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\75mosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\75sidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\75snapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\75timeslide'}}}]);
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/1400614585-lbx__en_gb.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/306752634-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'sidebar-right-1', null, document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar-right-1', null, document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ProfileView', new _WidgetInfo('Profile1', 'sidebar-right-1', null, document.getElementById('Profile1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar-right-1', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': 'Loading...'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', null, document.getElementById('Attribution1'), {'attribution': 'Powered by \74a href\75\47https://www.blogger.com\47 target\75\47_blank\47\76Blogger\74/a\76.'}, 'displayModeFull'));
+</script>
+
+<iframe name="oauth2relay958916991" id="oauth2relay958916991" src="./Scrapillars - following technology_ How to change Project Facet in Eclipse_files/postmessageRelay.html" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body></html>
