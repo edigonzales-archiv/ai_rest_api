@@ -1,0 +1,1 @@
+document.write('<a href="https://n1.ad.ad-srv.net/c/pq1txz9i374nu1m?tprde=https://clk.tradedoubler.com/click?p=59254&a=2430621&g=19238932&epi=96285447559606501" target="_blank"><img border="0" src="https://vht.tradedoubler.com/file/59254/120x60_Schuler.jpg" title="SCHULER St&#46; JakobsKellerei"></a>')
