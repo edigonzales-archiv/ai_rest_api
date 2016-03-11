@@ -1,4 +1,4 @@
-package org.catais.ai.rest;
+package org.catais.ai.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -7,14 +7,20 @@ public class Canton {
 
 	private int id;
 	
+	private int fosnr;
+	
 	private String code;
 	
 	private String name;
 	
-	public Canton(int id, String code, String name) {
-		this.id = id;
-		this.code = code;
-		this.name = name;
+//	public Canton(int id, String code, String name) {
+//		this.id = id;
+//		this.code = code;
+//		this.name = name;
+//	}
+
+	public Canton() {
+		
 	}
 	
 	public int getId() {
@@ -23,6 +29,14 @@ public class Canton {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+	
+	public int getFosnr() {
+		return fosnr;
+	}
+	
+	public void setFosnr(int fosnr) {
+		this.fosnr = fosnr;
 	}
 	
 	public String getCode() {
