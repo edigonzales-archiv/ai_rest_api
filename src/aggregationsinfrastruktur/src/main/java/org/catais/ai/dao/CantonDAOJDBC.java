@@ -23,8 +23,8 @@ public class CantonDAOJDBC implements CantonDAO {
 			"SELECT id, email, firstname, lastname, birthdate FROM User WHERE id = ?";
 	private static final String SQL_FIND_BY_EMAIL_AND_PASSWORD =
 			"SELECT id, email, firstname, lastname, birthdate FROM User WHERE email = ? AND password = MD5(?)";
-	private static final String SQL_LIST_ORDER_BY_ID =
-			"SELECT ogc_fid, fosnr, code, aname FROM ai_rest_api.canton ORDER BY fosnr";
+	private static final String SQL_LIST_ORDER_BY_FOSNR =
+			"SELECT ogc_fid, fosnr, code, aname FROM ai_rest_api.canton WHERE activated = TRUE ORDER BY fosnr";
 	private static final String SQL_INSERT =
 			"INSERT INTO User (email, password, firstname, lastname, birthdate) VALUES (?, MD5(?), ?, ?, ?)";
 	private static final String SQL_UPDATE =
@@ -54,12 +54,12 @@ public class CantonDAOJDBC implements CantonDAO {
 	// Actions ------------------------------------------------------------------------------------
 
 	@Override
-	public List<Canton> list() {
+	public List<Canton> listActivatedCantons() {
 		List<Canton> cantons = new ArrayList<>();
 
 		try (
 				Connection connection = daoFactory.getConnection();
-				PreparedStatement statement = connection.prepareStatement(SQL_LIST_ORDER_BY_ID);
+				PreparedStatement statement = connection.prepareStatement(SQL_LIST_ORDER_BY_FOSNR);
 				ResultSet resultSet = statement.executeQuery();
 				) {
 			while (resultSet.next()) {

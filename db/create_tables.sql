@@ -10,6 +10,7 @@ CREATE TABLE ai_rest_api.canton
   fosnr integer NOT NULL,
   code character varying(2) NOT NULL,
   aname character varying(255) NOT NULL,
+  activated boolean DEFAULT FALSE,
   geometrie geometry(MultiPolygon,2056),
   CONSTRAINT canton_pkey PRIMARY KEY (ogc_fid)
 )

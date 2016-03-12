@@ -17,10 +17,10 @@ public interface CantonDAO {
     // Actions ------------------------------------------------------------------------------------
 	
     /**
-     * Returns a list of all cantons from the database ordered by fosnr. The list is never null and
+     * Returns a list of all activated cantons from the database ordered by fosnr. The list is never null and
      * is empty when the database does not contain any canton.
-     * @return A list of all cantons from the database ordered by fosnr.
+     * @return A list of all activated cantons from the database ordered by fosnr.
      * @throws DAOException If something fails at database level.
      */
-	public List<Canton> list();
+	public List<Canton> listActivatedCantons();
 }

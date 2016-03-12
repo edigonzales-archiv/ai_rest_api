@@ -41,27 +41,9 @@ public class CantonResource {
 	
 	@GET
 	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML}) 
-	public List<Canton> getStartingPage()
-	{
-		
-		
-		System.out.println(cantonDAO.list());
-		
-		return cantonDAO.list(); //XML-Output only
-		
-//		List<Canton> matched;
-//		GenericEntity<List<Canton>> entity;
-//		
-//		matched = cantonDAO.list();
-//		entity = new GenericEntity<List<Canton>>(matched){};
-//		
-//		return Response.ok(entity).build();
-		
-
-		
-//		String output = "<h1>Hello World!<h1>" +
-//				"<p>RESTful Service is running ... <br>Ping @ " + new Date().toString() + "</p<br>";
-//		return Response.status(200).entity(output).build();
+	public List<Canton> listActivatedCantons()
+	{	
+		return cantonDAO.listActivatedCantons();
 	}
 
 	
