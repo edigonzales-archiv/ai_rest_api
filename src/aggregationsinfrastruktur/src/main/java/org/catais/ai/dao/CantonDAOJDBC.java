@@ -24,7 +24,7 @@ public class CantonDAOJDBC implements CantonDAO {
 	private static final String SQL_FIND_BY_EMAIL_AND_PASSWORD =
 			"SELECT id, email, firstname, lastname, birthdate FROM User WHERE email = ? AND password = MD5(?)";
 	private static final String SQL_LIST_ORDER_BY_ID =
-			"SELECT ogc_fid, fosnr, code, aname FROM ai_rest.api.canton ORDER BY ogc_fid";
+			"SELECT ogc_fid, fosnr, code, aname FROM ai_rest_api.canton ORDER BY fosnr";
 	private static final String SQL_INSERT =
 			"INSERT INTO User (email, password, firstname, lastname, birthdate) VALUES (?, MD5(?), ?, ?, ?)";
 	private static final String SQL_UPDATE =
@@ -71,23 +71,23 @@ public class CantonDAOJDBC implements CantonDAO {
 
 		return cantons;	
 	}
-	
-	
-    // Helpers ------------------------------------------------------------------------------------
 
-    /**
-     * Map the current row of the given ResultSet to an Canton.
-     * @param resultSet The ResultSet of which the current row is to be mapped to an Canton.
-     * @return The mapped Canton from the current row of the given ResultSet.
-     * @throws SQLException If something fails at database level.
-     */
-    private static Canton map(ResultSet resultSet) throws SQLException {
-        Canton canton = new Canton();
-        canton.setId(resultSet.getInt("ogc_fid"));
-        canton.setFosnr(resultSet.getInt("fosnr"));
-        canton.setCode(resultSet.getString("code"));
-        canton.setName(resultSet.getString("aname"));
-        return canton;
-    }
+
+	// Helpers ------------------------------------------------------------------------------------
+
+	/**
+	 * Map the current row of the given ResultSet to an Canton.
+	 * @param resultSet The ResultSet of which the current row is to be mapped to an Canton.
+	 * @return The mapped Canton from the current row of the given ResultSet.
+	 * @throws SQLException If something fails at database level.
+	 */
+	private static Canton map(ResultSet resultSet) throws SQLException {
+		Canton canton = new Canton();
+		canton.setId(resultSet.getInt("ogc_fid"));
+		canton.setFosnr(resultSet.getInt("fosnr"));
+		canton.setCode(resultSet.getString("code"));
+		canton.setName(resultSet.getString("aname"));
+		return canton;
+	}
 
 }
