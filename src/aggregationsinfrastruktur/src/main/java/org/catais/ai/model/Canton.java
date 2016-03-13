@@ -70,6 +70,7 @@ public class Canton {
         return new StringBuffer("Name : ").append(this.name)
         		.append("\nCode : ").append(this.code)
         		.append("\nFosNr : ").append(this.fosnr)
-        		.append("\nID : ").append(this.id).toString();
+        		.append("\nID : ").append(this.id)
+        		.append("\nActivated : ").append(this.activated).toString();
     }
 }

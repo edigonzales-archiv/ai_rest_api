@@ -7,9 +7,11 @@ import java.util.List;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.GenericEntity;
 
@@ -27,26 +29,13 @@ public class CantonResource {
 
 	DAOFactory xanadu2 = DAOFactory.getInstance("xanadu2.jdbc");
 	CantonDAO cantonDAO = xanadu2.getCantonDAO();
-
-	
-    //CantonDAO cantonDao = new CantonDAOImpl();
-	
-	// Returns list of cantons. 
-//	@GET
-//	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML}) 
-//	public List<Canton> findAll() {
-//		
-//		System.out.println("*********fubar");
-//		
-//		return new ArrayList(); // dummy
-//	}
 	
     // Actions ------------------------------------------------------------------------------------
 	
 	@GET
 	@Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON}) 
-	public List<Canton> listActivatedCantons() {	
-		return cantonDAO.listActivatedCantons();
+	public List<Canton> listCantons() {	
+		return cantonDAO.listCantons();
 	}
 	
 	@GET
@@ -56,11 +45,12 @@ public class CantonResource {
 		return cantonDAO.countActivatedCantons();
 	}
 	
-	@POST
+	@PUT
+	@Path("{ct}")
     @Consumes(MediaType.APPLICATION_XML)
-	public Response activateCanton(Canton canton) {		
-		cantonDAO.activateCanton(canton);
-		return Response.status(201).build();
+	public Response changeCantonStatus(@PathParam("ct") String cantonCode, @QueryParam("activated") boolean activated) {			
+		cantonDAO.changeCantonStatus(cantonCode.toUpperCase(), activated);
+		return Response.status(200).build();
 	}
 
 	

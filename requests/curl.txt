@@ -1,0 +1,15 @@
+// Get activated cantons (XML response).
+curl -v -XGET http://localhost:8080/aggregationsinfrastruktur/rest/cantons/
+curl -v -H "Accept: application/xml" -XGET http://localhost:8080/aggregationsinfrastruktur/rest/cantons/
+
+// Get activated cantons (JSON response).
+curl -v -H "Accept: application/json" -XGET http://localhost:8080/aggregationsinfrastruktur/rest/cantons/
+
+// Get number of activated cantons.
+curl -v -XGET http://localhost:8080/aggregationsinfrastruktur/rest/cantons/counts
+
+
+// (De)Activate a canton.
+//curl -v -H "Content-type: application/xml" -d "<canton><code>ZH</code></canton>" -XPOST http://localhost:8080/aggregationsinfrastruktur/rest/cantons/
+curl -v -XPUT http://localhost:8080/aggregationsinfrastruktur/rest/cantons/so?activated=true
+curl -v -XPUT http://localhost:8080/aggregationsinfrastruktur/rest/cantons/gl?activated=false

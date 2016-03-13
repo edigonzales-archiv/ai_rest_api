@@ -28,13 +28,13 @@ public class CantonDAOJDBC implements CantonDAO {
 	private static final String SQL_FIND_BY_EMAIL_AND_PASSWORD =
 			"SELECT id, email, firstname, lastname, birthdate FROM User WHERE email = ? AND password = MD5(?)";
 	private static final String SQL_LIST_ORDER_BY_FOSNR =
-			"SELECT ogc_fid, fosnr, code, aname, activated FROM " + DB_TABLE + " WHERE activated = TRUE ORDER BY fosnr";
+			"SELECT ogc_fid, fosnr, code, aname, activated FROM " + DB_TABLE + " ORDER BY fosnr";
 	private static final String SQL_COUNT =
 			"SELECT count(*) FROM " + DB_TABLE + " WHERE activated = TRUE";	
 	private static final String SQL_INSERT =
 			"INSERT INTO User (email, password, firstname, lastname, birthdate) VALUES (?, MD5(?), ?, ?, ?)";
-	private static final String SQL_UPDATE_ACTIVATE =
-			"UPDATE " + DB_TABLE + " SET activated = TRUE WHERE code = ?";
+	private static final String SQL_UPDATE_ACTIVATED =
+			"UPDATE " + DB_TABLE + " SET activated = ? WHERE code = ?";
 	private static final String SQL_DELETE =
 			"DELETE FROM User WHERE id = ?";
 	private static final String SQL_EXIST_EMAIL =
@@ -60,7 +60,7 @@ public class CantonDAOJDBC implements CantonDAO {
 	// Actions ------------------------------------------------------------------------------------
 
 	@Override
-	public List<Canton> listActivatedCantons() {
+	public List<Canton> listCantons() {
 		List<Canton> cantons = new ArrayList<>();
 
 		try (
@@ -98,27 +98,20 @@ public class CantonDAOJDBC implements CantonDAO {
 		}
 		return numberOfRows;
 	}
-	
-	// TODO: Still not sure about REST API.
-	// PUT/POST... 
-	// Return status if already activated etc. etc.
-	
-	// /cantons returns ALL cantons.
-	// PATCH /canton/<ct> (de)activate
-	
-	
+		
 	@Override 
-	public void activateCanton(Canton canton) {
-        if (canton.getCode() == null) {
-            throw new IllegalArgumentException("Canton is not activated yet, the canton code is null.");
-        }
+	public void changeCantonStatus(String cantonCode, boolean activated) {
+//        if (canton.getCode() == null) {
+//            throw new IllegalArgumentException("Canton is not activated yet, the canton code is null.");
+//        }
 
         Object[] values = {
-            canton.getCode()
+            activated,	
+        	cantonCode
         };
         
         try (Connection connection = daoFactory.getConnection();
-        		PreparedStatement statement = prepareStatement(connection, SQL_UPDATE_ACTIVATE, false, values);
+        		PreparedStatement statement = prepareStatement(connection, SQL_UPDATE_ACTIVATED, false, values);
         	) 
         {
         	int affectedRows = statement.executeUpdate();
