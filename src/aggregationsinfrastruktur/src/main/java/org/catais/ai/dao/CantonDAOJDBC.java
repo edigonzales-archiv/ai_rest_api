@@ -28,7 +28,7 @@ public class CantonDAOJDBC implements CantonDAO {
 	private static final String SQL_FIND_BY_EMAIL_AND_PASSWORD =
 			"SELECT id, email, firstname, lastname, birthdate FROM User WHERE email = ? AND password = MD5(?)";
 	private static final String SQL_LIST_ORDER_BY_FOSNR =
-			"SELECT ogc_fid, fosnr, code, aname FROM " + DB_TABLE + " WHERE activated = TRUE ORDER BY fosnr";
+			"SELECT ogc_fid, fosnr, code, aname, activated FROM " + DB_TABLE + " WHERE activated = TRUE ORDER BY fosnr";
 	private static final String SQL_COUNT =
 			"SELECT count(*) FROM " + DB_TABLE + " WHERE activated = TRUE";	
 	private static final String SQL_INSERT =
@@ -99,6 +99,14 @@ public class CantonDAOJDBC implements CantonDAO {
 		return numberOfRows;
 	}
 	
+	// TODO: Still not sure about REST API.
+	// PUT/POST... 
+	// Return status if already activated etc. etc.
+	
+	// /cantons returns ALL cantons.
+	// PATCH /canton/<ct> (de)activate
+	
+	
 	@Override 
 	public void activateCanton(Canton canton) {
         if (canton.getCode() == null) {
@@ -108,8 +116,6 @@ public class CantonDAOJDBC implements CantonDAO {
         Object[] values = {
             canton.getCode()
         };
-
-        System.out.println(canton.getCode());
         
         try (Connection connection = daoFactory.getConnection();
         		PreparedStatement statement = prepareStatement(connection, SQL_UPDATE_ACTIVATE, false, values);
@@ -139,6 +145,7 @@ public class CantonDAOJDBC implements CantonDAO {
 		canton.setFosnr(resultSet.getInt("fosnr"));
 		canton.setCode(resultSet.getString("code"));
 		canton.setName(resultSet.getString("aname"));
+		canton.setActivated(resultSet.getBoolean("activated"));
 		return canton;
 	}
 

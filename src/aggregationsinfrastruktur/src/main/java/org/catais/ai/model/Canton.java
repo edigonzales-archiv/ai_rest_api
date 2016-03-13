@@ -12,6 +12,8 @@ public class Canton {
 	private String code;
 	
 	private String name;
+	
+	private boolean activated;
 
 	public Canton() {
 		
@@ -53,6 +55,14 @@ public class Canton {
 	
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public boolean getActivated() {
+		return activated;
+	}
+	
+	public void setActivated(boolean activated) {
+		this.activated = activated;
 	}
 	
     @Override

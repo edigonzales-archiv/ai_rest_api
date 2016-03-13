@@ -23,6 +23,8 @@ import javax.ws.rs.core.MediaType;
 @Path("/cantons")
 public class CantonResource {
 	
+	// Vars ---------------------------------------------------------------------------------------
+
 	DAOFactory xanadu2 = DAOFactory.getInstance("xanadu2.jdbc");
 	CantonDAO cantonDAO = xanadu2.getCantonDAO();
 
@@ -39,7 +41,7 @@ public class CantonResource {
 //		return new ArrayList(); // dummy
 //	}
 	
-	
+    // Actions ------------------------------------------------------------------------------------
 	
 	@GET
 	@Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON}) 
