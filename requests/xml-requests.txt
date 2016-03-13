@@ -1,0 +1,7 @@
+
+// Activate a canton.
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<canton>
+    <code>ZH</code>
+</canton>

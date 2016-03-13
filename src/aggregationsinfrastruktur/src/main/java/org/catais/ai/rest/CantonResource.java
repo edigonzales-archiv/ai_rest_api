@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -40,10 +42,23 @@ public class CantonResource {
 	
 	
 	@GET
-	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML}) 
-	public List<Canton> listActivatedCantons()
-	{	
+	@Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON}) 
+	public List<Canton> listActivatedCantons() {	
 		return cantonDAO.listActivatedCantons();
+	}
+	
+	@GET
+	@Path("count")
+	@Produces(MediaType.TEXT_PLAIN)
+	public int countActivatedCantons() {
+		return cantonDAO.countActivatedCantons();
+	}
+	
+	@POST
+    @Consumes(MediaType.APPLICATION_XML)
+	public Response activateCanton(Canton canton) {		
+		cantonDAO.activateCanton(canton);
+		return Response.status(201).build();
 	}
 
 	

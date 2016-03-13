@@ -1,5 +1,7 @@
 package org.catais.ai.dao;
 
+import static org.catais.ai.dao.DAOUtil.*;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -19,16 +21,20 @@ public class CantonDAOJDBC implements CantonDAO {
 
 	// Constants ----------------------------------------------------------------------------------
 
+	private static final String DB_TABLE = 
+			"ai_rest_api.canton";
 	private static final String SQL_FIND_BY_ID =
 			"SELECT id, email, firstname, lastname, birthdate FROM User WHERE id = ?";
 	private static final String SQL_FIND_BY_EMAIL_AND_PASSWORD =
 			"SELECT id, email, firstname, lastname, birthdate FROM User WHERE email = ? AND password = MD5(?)";
 	private static final String SQL_LIST_ORDER_BY_FOSNR =
-			"SELECT ogc_fid, fosnr, code, aname FROM ai_rest_api.canton WHERE activated = TRUE ORDER BY fosnr";
+			"SELECT ogc_fid, fosnr, code, aname FROM " + DB_TABLE + " WHERE activated = TRUE ORDER BY fosnr";
+	private static final String SQL_COUNT =
+			"SELECT count(*) FROM " + DB_TABLE + " WHERE activated = TRUE";	
 	private static final String SQL_INSERT =
 			"INSERT INTO User (email, password, firstname, lastname, birthdate) VALUES (?, MD5(?), ?, ?, ?)";
-	private static final String SQL_UPDATE =
-			"UPDATE User SET email = ?, firstname = ?, lastname = ?, birthdate = ? WHERE id = ?";
+	private static final String SQL_UPDATE_ACTIVATE =
+			"UPDATE " + DB_TABLE + " SET activated = TRUE WHERE code = ?";
 	private static final String SQL_DELETE =
 			"DELETE FROM User WHERE id = ?";
 	private static final String SQL_EXIST_EMAIL =
@@ -61,7 +67,8 @@ public class CantonDAOJDBC implements CantonDAO {
 				Connection connection = daoFactory.getConnection();
 				PreparedStatement statement = connection.prepareStatement(SQL_LIST_ORDER_BY_FOSNR);
 				ResultSet resultSet = statement.executeQuery();
-				) {
+			) 
+		{
 			while (resultSet.next()) {
 				cantons.add(map(resultSet));
 			}
@@ -72,6 +79,51 @@ public class CantonDAOJDBC implements CantonDAO {
 		return cantons;	
 	}
 
+	@Override
+	public int countActivatedCantons() {
+		int numberOfRows = 0;
+		
+		try (Connection connection = daoFactory.getConnection();
+				PreparedStatement statement = connection.prepareStatement(SQL_COUNT);
+				ResultSet resultSet = statement.executeQuery();
+			)	
+		{		
+			if (resultSet.next()) {
+				numberOfRows = resultSet.getInt(1);
+				System.out.println("numberOfRows= " + numberOfRows);
+			} 
+		}
+		catch (SQLException e) {
+			throw new DAOException(e);
+		}
+		return numberOfRows;
+	}
+	
+	@Override 
+	public void activateCanton(Canton canton) {
+        if (canton.getCode() == null) {
+            throw new IllegalArgumentException("Canton is not activated yet, the canton code is null.");
+        }
+
+        Object[] values = {
+            canton.getCode()
+        };
+
+        System.out.println(canton.getCode());
+        
+        try (Connection connection = daoFactory.getConnection();
+        		PreparedStatement statement = prepareStatement(connection, SQL_UPDATE_ACTIVATE, false, values);
+        	) 
+        {
+        	int affectedRows = statement.executeUpdate();
+        	if (affectedRows == 0) {
+        		throw new DAOException("Updating canton failed, no rows affected.");
+        	}
+        } catch (SQLException e) {
+        	throw new DAOException(e);
+        }
+	}
+	
 
 	// Helpers ------------------------------------------------------------------------------------
 

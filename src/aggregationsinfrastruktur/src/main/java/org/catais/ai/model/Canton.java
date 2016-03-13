@@ -12,16 +12,16 @@ public class Canton {
 	private String code;
 	
 	private String name;
+
+	public Canton() {
+		
+	}
 	
 //	public Canton(int id, String code, String name) {
 //		this.id = id;
 //		this.code = code;
 //		this.name = name;
 //	}
-
-	public Canton() {
-		
-	}
 	
 	public int getId() {
 		return id;
@@ -54,4 +54,12 @@ public class Canton {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+    @Override
+    public String toString() {
+        return new StringBuffer("Name : ").append(this.name)
+        		.append("\nCode : ").append(this.code)
+        		.append("\nFosNr : ").append(this.fosnr)
+        		.append("\nID : ").append(this.id).toString();
+    }
 }
