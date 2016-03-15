@@ -101,10 +101,6 @@ public class CantonDAOJDBC implements CantonDAO {
 		
 	@Override 
 	public void changeCantonStatus(String cantonCode, boolean activated) {
-//        if (canton.getCode() == null) {
-//            throw new IllegalArgumentException("Canton is not activated yet, the canton code is null.");
-//        }
-
         Object[] values = {
             activated,	
         	cantonCode
