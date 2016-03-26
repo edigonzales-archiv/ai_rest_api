@@ -1,0 +1,112 @@
+\documentclass[12pt]{scrartcl}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+
+\setdefaultlanguage{german} 
+
+\setmainfont[Path=/Users/stefan/Library/Fonts/,
+    BoldFont=TT0180M_.TTF,
+    ItalicFont=TT0177M_.TTF
+]
+{TT0176M_.TTF}
+
+\setsansfont[Path=/Users/stefan/Library/Fonts/,
+    BoldFont=TT0180M_.TTF,
+    ItalicFont=TT0177M_.TTF
+]
+{TT0176M_.TTF}
+
+\setmonofont[Path=/Users/stefan/Library/Fonts/,
+    Color={0019D4}
+]
+{Hack-Regular.ttf}
+
+\title{REST-API für kantonale Geodatenmodelle} 
+\subtitle{Aggregationsinfrastruktur der Kantone}
+\author{Stefan Ziegler / stefan.ziegler@outlook.com}
+\date{27.~März 2016}
+
+\begin{document}
+
+\maketitle
+
+\begin{table}[ht]
+\centering  
+\begin{tabular}{| l | l | l | l |}  
+\hline
+\textbf{Version} & \textbf{Datum} & \textbf{Name} & \textbf{Bemerkungen} \\ 
+\hline  
+0.1 & 27.~März 2016 & Stefan Ziegler & Initialfassung \\ 
+\hline 
+\end{tabular}
+\end{table}
+
+\tableofcontents
+
+\section{Kantone (= Mandanten)}
+
+\texttt{/cantons}
+
+\begin{table}[ht]
+%\centering  
+\begin{tabular}{| l | l | l | l | l |}  
+\hline
+\textbf{Method} & \textbf{Action} & \textbf{Status code} & \textbf{Formats} & \textbf{Parameters} \\
+\hline  
+GET & List all cantons & 200 & XML, JSON & \\ 
+\hline 
+POST & Create a new canton & 201 & XML, JSON & \\ 
+\hline 
+PUT & & 405 & & \\ 
+\hline 
+DELETE & & 405 & & \\ 
+\hline 
+\end{tabular}
+\end{table}
+
+\begin{description}
+    \item[GET] Liefert alle Kantone, die aktiviert sind und welche die Möglichkeit haben, KGDM zu verwalten und anzubieten.
+    \item[POST] Erstellt einen neuen Kanton. Es ist nicht möglich ein beliebiges Objekt zu erstellen, sondern das Objekt unterliegt gewissen Bedingungen/Einschränkungen. Es können nur offizielle Kantone erstellt werden. Dieser Sachverhalt wird beim Erstellen geprüft. Wird das zu erstellende Objekt in der DB-Tabelle gefunden, wird es aktiviert. (Zuständigkeit: AI-Administrator).
+\end{description}
+
+\begin{table}[ht]
+%\centering  
+\begin{tabular}{| l | l |}  
+\hline
+\textbf{Exception} & \textbf{Status code} \\
+\hline  
+POST a non valid canton & 406 \\ 
+\hline 
+\end{tabular}
+\end{table}
+
+
+\subsection{Beispiele}
+
+Dieser abc {\itshape abc} Abschnitt sollte sich mit der Aufgabenstellung befassen. Er kann auch
+Grundlagen behandeln. Es kann jedoch sinnvoll sein, für die Grundlagen einen
+eigenen Abschnitt zu verwenden.
+\section{Durchführung}
+Hier erzählt man nun, was man alles gemacht hat.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+
+
+ This an \textit{example} of document compiled
+ with \textbf{xelatex} compiler. LuaLaTeX should
+ work fine also.
+
+ \begin{verbatim}
+ usually this environment is used to display code
+
+ <html>
+ <head> </head>
+ <body>
+ <h1> Hello World</h1>
+ </body>
+ </html>
+ \end{verbatim}
+
+ {\sffamily This is a sample text in \textbf{Sans Serif Font Typeface}}
+
+
+\end{document}
