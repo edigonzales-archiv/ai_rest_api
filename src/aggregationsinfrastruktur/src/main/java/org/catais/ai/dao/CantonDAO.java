@@ -17,9 +17,9 @@ public interface CantonDAO {
     // Actions ------------------------------------------------------------------------------------
 	
     /**
-     * Returns a list of all cantons from the database ordered by fosnr. The list is never null and
-     * is empty when the database does not contain any canton.
-     * @return A list of all cantons from the database ordered by fosnr.
+     * Returns a list of all activated cantons from the database ordered by fosnr. 
+     * The list is never null and is empty when the database does not contain any canton.
+     * @return A list of all activated cantons from the database ordered by fosnr.
      * @throws DAOException If something fails at database level.
      */
 	public List<Canton> listCantons();
@@ -33,10 +33,10 @@ public interface CantonDAO {
 	
     /**
      * Activate a canton in the database. The canton code must exist, otherwise it will throw
-     * IllegalArgumentException
+     * IllegalArgumentException.
      * @param canton The canton to activate.
      * @throws IllegalArgumentException If the canton code does not exist.
      * @throws DAOException If something fails at database level.
      */
-	public void changeCantonStatus(String cantonCode, boolean activated);
+	public void activateCanton(Canton canton);
 }

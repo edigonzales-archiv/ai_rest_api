@@ -45,13 +45,21 @@ public class CantonResource {
 		return cantonDAO.countActivatedCantons();
 	}
 	
-	@PUT
-	@Path("{ct}")
-    @Consumes(MediaType.APPLICATION_XML)
-	public Response changeCantonStatus(@PathParam("ct") String cantonCode, @QueryParam("activated") boolean activated) {			
-		cantonDAO.changeCantonStatus(cantonCode.toUpperCase(), activated);
-		return Response.status(200).build();
-	}
+	@POST
+	@Consumes(MediaType.APPLICATION_XML)
+	public Response activateCanton(Canton canton) {		
+		cantonDAO.activateCanton(canton);
+		return Response.status(201).build();
+	} 
+	
+	
+//	@PUT
+//	@Path("{ct}")
+//    @Consumes(MediaType.APPLICATION_XML)
+//	public Response changeCantonStatus(@PathParam("ct") String cantonCode, @QueryParam("activated") boolean activated) {			
+//		cantonDAO.changeCantonStatus(cantonCode.toUpperCase(), activated);
+//		return Response.status(200).build();
+//	}
 
 	
 	

@@ -6,7 +6,7 @@ INSERT INTO ai_rest_api.canton (fosnr, code, aname, activated) VALUES
     (5, 'SZ', 'Schwyz', FALSE),
     (6, 'OW', 'Obwalden', FALSE),
     (7, 'NW', 'Nidwalden', FALSE),
-    (8, 'GL', 'Glarus', TRUE),
+    (8, 'GL', 'Glarus', FALSE),
     (9, 'ZG', 'Zug', FALSE),
     (10, 'FR', 'Freiburg', FALSE),
     (11, 'SO', 'Solothurn', TRUE),

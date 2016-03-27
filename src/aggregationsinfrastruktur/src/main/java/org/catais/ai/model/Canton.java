@@ -13,7 +13,9 @@ public class Canton {
 	
 	private String name;
 	
-	private boolean activated;
+	private String email;
+	
+	private Boolean activated;
 
 	public Canton() {
 		
@@ -57,11 +59,19 @@ public class Canton {
 		this.name = name;
 	}
 	
-	public boolean getActivated() {
+	public String getEmail() {
+		return email;
+	}
+	
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	public Boolean getActivated() {
 		return activated;
 	}
 	
-	public void setActivated(boolean activated) {
+	public void setActivated(Boolean activated) {
 		this.activated = activated;
 	}
 	
