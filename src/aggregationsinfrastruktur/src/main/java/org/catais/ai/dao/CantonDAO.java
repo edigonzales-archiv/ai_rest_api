@@ -39,4 +39,22 @@ public interface CantonDAO {
      * @throws DAOException If something fails at database level.
      */
 	public void activateCanton(Canton canton);
+	
+    /**
+     * Returns the requested canton from the database. The canton
+     * has to be activated.
+     * @param cantonCode The requested canton code.
+     * @return The request canton.
+     * @throws DAOException If something fails at database level.
+     */
+	public Canton listCanton(String cantonCode);
+	
+    /**
+     * Updates the requested canton. Only few selected properties can be changed. 
+  	 * The canton has to be activated and the canton code is mandatory.
+     * @param canton The properties that has to be updated.
+     * @throws DAOException If something fails at database level.
+     */
+	public void updateCanton(Canton canton);
+
 }

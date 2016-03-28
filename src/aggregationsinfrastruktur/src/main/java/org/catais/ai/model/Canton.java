@@ -5,9 +5,9 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Canton {
 
-	private int id;
+	private Integer id;
 	
-	private int fosnr;
+	private Integer fosnr;
 	
 	private String code;
 	
@@ -80,6 +80,7 @@ public class Canton {
         return new StringBuffer("Name : ").append(this.name)
         		.append("\nCode : ").append(this.code)
         		.append("\nFosNr : ").append(this.fosnr)
+        		.append("\nE-Mail : ").append(this.email)
         		.append("\nID : ").append(this.id)
         		.append("\nActivated : ").append(this.activated).toString();
     }

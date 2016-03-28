@@ -27,9 +27,12 @@ public class CantonDAOJDBC implements CantonDAO {
 //			"SELECT id, email, firstname, lastname, birthdate FROM User WHERE id = ?";
 //	private static final String SQL_FIND_BY_EMAIL_AND_PASSWORD =
 //			"SELECT id, email, firstname, lastname, birthdate FROM User WHERE email = ? AND password = MD5(?)";
-	private static final String SQL_LIST_ORDER_BY_FOSNR =
+	private static final String SQL_LIST_ALL_ORDER_BY_FOSNR =
 			"SELECT ogc_fid, fosnr, code, aname, email, activated FROM " + DB_TABLE + " "
 					+ "WHERE activated = true ORDER BY fosnr";
+	private static final String SQL_LIST_SINGLE =
+			"SELECT ogc_fid, fosnr, code, aname, email, activated FROM " + DB_TABLE + " "
+					+ "WHERE activated = true AND code =  ?";	
 	private static final String SQL_COUNT =
 			"SELECT count(*) FROM " + DB_TABLE + " WHERE activated = TRUE";	
 //	private static final String SQL_INSERT =
@@ -66,7 +69,7 @@ public class CantonDAOJDBC implements CantonDAO {
 
 		try (
 				Connection connection = daoFactory.getConnection();
-				PreparedStatement statement = connection.prepareStatement(SQL_LIST_ORDER_BY_FOSNR);
+				PreparedStatement statement = connection.prepareStatement(SQL_LIST_ALL_ORDER_BY_FOSNR);
 				ResultSet resultSet = statement.executeQuery();
 			) 
 		{
@@ -84,7 +87,8 @@ public class CantonDAOJDBC implements CantonDAO {
 	public int countActivatedCantons() {
 		int numberOfRows = 0;
 		
-		try (Connection connection = daoFactory.getConnection();
+		try (
+				Connection connection = daoFactory.getConnection();
 				PreparedStatement statement = connection.prepareStatement(SQL_COUNT);
 				ResultSet resultSet = statement.executeQuery();
 			)	
@@ -111,7 +115,8 @@ public class CantonDAOJDBC implements CantonDAO {
 				canton.getCode()
 		};
 		
-		try (Connection connection = daoFactory.getConnection();
+		try (
+				Connection connection = daoFactory.getConnection();
         		PreparedStatement statement = prepareStatement(connection, SQL_UPDATE_ACTIVATED, false, values);
         	) 
         {
@@ -122,6 +127,31 @@ public class CantonDAOJDBC implements CantonDAO {
         } catch (SQLException e) {
         	throw new DAOException(e);
         }
+	}
+	
+	@Override
+	public Canton listCanton(String cantonCode) {
+		Canton canton = null;
+		
+		Object[] values = {
+				cantonCode
+		};
+		
+		try (
+				Connection connection = daoFactory.getConnection();
+				PreparedStatement statement = prepareStatement(connection, SQL_LIST_SINGLE, false, values);
+				ResultSet resultSet = statement.executeQuery();
+			) 
+		{
+			// Should return only one row.
+			while (resultSet.next()) {
+				canton = map(resultSet);
+			}
+		} catch (SQLException e) {
+			throw new DAOException(e);
+		}
+
+		return canton;
 	}
 
 

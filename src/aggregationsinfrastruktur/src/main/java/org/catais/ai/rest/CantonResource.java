@@ -16,6 +16,7 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.GenericEntity;
 
 import org.catais.ai.dao.CantonDAO;
+import org.catais.ai.dao.DAOException;
 import org.catais.ai.dao.DAOFactory;
 import org.catais.ai.model.Canton;
 
@@ -47,10 +48,34 @@ public class CantonResource {
 	
 	@POST
 	@Consumes(MediaType.APPLICATION_XML)
-	public Response activateCanton(Canton canton) {		
-		cantonDAO.activateCanton(canton);
-		return Response.status(201).build();
+	public Response activateCanton(Canton canton) {	
+		try {
+			cantonDAO.activateCanton(canton);
+			return Response.status(201).build();
+		} catch (DAOException e) {
+			return Response.status(406).build();
+		}
 	} 
+	
+	@GET
+	@Path("{ct}")
+	@Consumes(MediaType.APPLICATION_XML)
+	public Canton listCanton(@PathParam("ct") String cantonCode) {		
+		return cantonDAO.listCanton(cantonCode.toUpperCase());
+	}
+	
+	@PUT
+	@Path("{ct}")
+	@Consumes(MediaType.APPLICATION_XML)
+	public Response updateCanton(@PathParam("ct") String cantonCode, Canton canton) {
+		
+		
+		System.out.println(cantonCode);
+		System.out.println(canton);
+
+		
+		return Response.status(200).build(); 
+	}
 	
 	
 //	@PUT
