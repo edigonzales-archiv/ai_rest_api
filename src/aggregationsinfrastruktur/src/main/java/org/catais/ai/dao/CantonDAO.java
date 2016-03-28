@@ -50,11 +50,25 @@ public interface CantonDAO {
 	public Canton listCanton(String cantonCode);
 	
     /**
-     * Updates the requested canton. Only few selected properties can be changed. 
+     * Updates the requested canton. Only few selected properties can be changed:
+     *  - E-mail
+     *  - ... 
   	 * The canton has to be activated and the canton code is mandatory.
      * @param canton The properties that has to be updated.
      * @throws DAOException If something fails at database level.
      */
 	public void updateCanton(Canton canton);
 
+    /**
+     * Deletes the requested canton. A canton will be only deleted 
+     * if there is no associated model to it. If you want to delete 
+     * (= deactivate) a non empty canton, you have to use the 
+     * recursive = true parameter.
+     * @param cantonCode The requested canton code.
+     * @param recursive Recursive deleting a canton.
+     * @throws DAOException If something fails at database level.
+     */
+	public void deleteCanton(String cantonCode, boolean recursive);
+
+	
 }

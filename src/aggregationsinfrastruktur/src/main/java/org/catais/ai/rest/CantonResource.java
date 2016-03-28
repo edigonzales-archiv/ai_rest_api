@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.List;
 
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -68,13 +69,25 @@ public class CantonResource {
 	@Path("{ct}")
 	@Consumes(MediaType.APPLICATION_XML)
 	public Response updateCanton(@PathParam("ct") String cantonCode, Canton canton) {
+		try {
+			cantonDAO.activateCanton(canton);
+			return Response.status(200).build();
+		} catch (DAOException e) {
+			return Response.status(500).build();
+		}
+	}
+	
+	@DELETE
+	@Path("{ct}")
+	@Consumes(MediaType.APPLICATION_XML)
+	public Response deleteCanton(@PathParam("ct") String cantonCode, @QueryParam("recursive") boolean recursive) {
 		
 		
 		System.out.println(cantonCode);
-		System.out.println(canton);
-
 		
-		return Response.status(200).build(); 
+		cantonDAO.deleteCanton(cantonCode, recursive);
+		
+		return Response.status(200).build();
 	}
 	
 	

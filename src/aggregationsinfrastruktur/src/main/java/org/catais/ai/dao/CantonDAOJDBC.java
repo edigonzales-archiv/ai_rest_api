@@ -39,6 +39,8 @@ public class CantonDAOJDBC implements CantonDAO {
 //			"INSERT INTO User (email, password, firstname, lastname, birthdate) VALUES (?, MD5(?), ?, ?, ?)";
 	private static final String SQL_UPDATE_ACTIVATED =
 			"UPDATE " + DB_TABLE + " SET activated = TRUE, email = ? WHERE code = ?";
+	private static final String SQL_UPDATE_CANTON =
+			"UPDATE " + DB_TABLE + " SET email = ? WHERE code = ? AND activated = TRUE";
 //	private static final String SQL_DELETE =
 //			"DELETE FROM User WHERE id = ?";
 //	private static final String SQL_EXIST_EMAIL =
@@ -152,6 +154,44 @@ public class CantonDAOJDBC implements CantonDAO {
 		}
 
 		return canton;
+	}
+	
+	@Override
+	public void updateCanton(Canton canton) {
+		if (canton.getCode() == null) {
+			throw new IllegalArgumentException("Canton property is mandatory. Canton cannot be updated.");
+		}
+
+		Object[] values = {
+				canton.getEmail(),
+				canton.getCode()
+		};
+		
+		try (
+				Connection connection = daoFactory.getConnection();
+        		PreparedStatement statement = prepareStatement(connection, SQL_UPDATE_CANTON, false, values);
+        	) 
+        {
+        	int affectedRows = statement.executeUpdate();
+        	if (affectedRows == 0) {
+        		throw new DAOException("Updating canton failed, no rows affected.");
+        	}
+        } catch (SQLException e) {
+        	throw new DAOException(e);
+        }
+	}
+	
+	@Override
+	public void deleteCanton(String cantonCode, boolean recursive) {
+		// Does canton exists (and is activated)?
+		
+		
+		// If recursive == false, does canton have corresponding models?
+		
+		
+		// Delete/deactivate canton.
+		// If recursive == true, delete all corresponding models.
+		
 	}
 
 
