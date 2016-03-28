@@ -19,7 +19,7 @@ INSERT INTO ai_rest_api.canton (fosnr, code, aname, activated) VALUES
     (18, 'GR', 'Graubünden', FALSE),
     (19, 'AG', 'Aargau', FALSE),
     (20, 'TG', 'Thurgau', FALSE),
-    (21, 'TI', 'Tessing', FALSE),
+    (21, 'TI', 'Tessin', FALSE),
     (22, 'VD', 'Waadt', FALSE),
     (23, 'VS', 'Wallis', FALSE),
     (24, 'NE', 'Neuenburg', FALSE),
