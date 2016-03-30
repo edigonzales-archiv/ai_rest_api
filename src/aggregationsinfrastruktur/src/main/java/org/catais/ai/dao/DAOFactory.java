@@ -131,8 +131,14 @@ public abstract class DAOFactory {
     public CantonDAO getCantonDAO() {
         return new CantonDAOJDBC(this);
     }
-
-    // You can add more DAO implementation getters here.
+    
+    /**
+     * Returns the Model DAO associated with the current DAOFactory.
+     * @return The Model DAO associated with the current DAOFactory.
+     */
+    public ModelDAO getModelDAO() {
+    	return new ModelDAOJDBC(this);
+    }
 
 }
 

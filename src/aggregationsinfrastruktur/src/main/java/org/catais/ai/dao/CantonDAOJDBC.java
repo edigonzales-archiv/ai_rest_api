@@ -58,9 +58,9 @@ public class CantonDAOJDBC implements CantonDAO {
 	// Constructors -------------------------------------------------------------------------------
 
 	/**
-	 * Construct an User DAO for the given DAOFactory. Package private so that it can be constructed
+	 * Construct an Canton DAO for the given DAOFactory. Package private so that it can be constructed
 	 * inside the DAO package only.
-	 * @param daoFactory The DAOFactory to construct this User DAO for.
+	 * @param daoFactory The DAOFactory to construct this Canton DAO for.
 	 */
 	CantonDAOJDBC(DAOFactory daoFactory) {
 		this.daoFactory = daoFactory;
@@ -199,33 +199,11 @@ public class CantonDAOJDBC implements CantonDAO {
 	}
 
 
-		
-//	@Override 
-//	public void changeCantonStatus(String cantonCode, boolean activated) {
-//        Object[] values = {
-//            activated,	
-//        	cantonCode
-//        };
-//        
-//        try (Connection connection = daoFactory.getConnection();
-//        		PreparedStatement statement = prepareStatement(connection, SQL_UPDATE_ACTIVATED, false, values);
-//        	) 
-//        {
-//        	int affectedRows = statement.executeUpdate();
-//        	if (affectedRows == 0) {
-//        		throw new DAOException("Updating canton failed, no rows affected.");
-//        	}
-//        } catch (SQLException e) {
-//        	throw new DAOException(e);
-//        }
-//	}
-	
-
 	// Helpers ------------------------------------------------------------------------------------
 
 	/**
-	 * Map the current row of the given ResultSet to an Canton.
-	 * @param resultSet The ResultSet of which the current row is to be mapped to an Canton.
+	 * Map the current row of the given ResultSet to a Canton.
+	 * @param resultSet The ResultSet of which the current row is to be mapped to a Canton.
 	 * @return The mapped Canton from the current row of the given ResultSet.
 	 * @throws SQLException If something fails at database level.
 	 */

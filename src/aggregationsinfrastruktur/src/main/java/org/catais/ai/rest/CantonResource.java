@@ -51,6 +51,7 @@ public class CantonResource {
 		}
 	} 
 	
+	// Returns 204 "No content" if canton == null
 	@GET
 	@Path("{ct}")
 	@Consumes(MediaType.APPLICATION_XML)
@@ -77,16 +78,5 @@ public class CantonResource {
 		cantonDAO.deleteCanton(cantonCode, recursive);
 		return Response.status(200).build();
 	}
-	
-	
-//	@PUT
-//	@Path("{ct}")
-//    @Consumes(MediaType.APPLICATION_XML)
-//	public Response changeCantonStatus(@PathParam("ct") String cantonCode, @QueryParam("activated") boolean activated) {			
-//		cantonDAO.changeCantonStatus(cantonCode.toUpperCase(), activated);
-//		return Response.status(200).build();
-//	}
-
-	
 	
 }

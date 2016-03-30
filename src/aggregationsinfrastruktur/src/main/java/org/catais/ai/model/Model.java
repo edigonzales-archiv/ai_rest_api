@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Model {
 	
-	private int id;
+	private Integer id;
 		
 	private String name;
 	
@@ -17,17 +17,19 @@ public class Model {
 	
 	private Date publishingDate;
 	
-	private boolean activated;
+	private String repository;
+	
+	private Boolean activated;
 
 	public Model() {
 		
 	}
 	
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -63,11 +65,30 @@ public class Model {
 		this.publishingDate = publishingDate;
 	}
 	
-	public boolean getActivated() {
+	public String getRepository() {
+		return repository;
+	}
+	
+	public void setRepository(String repository) {
+		this.repository = repository;
+	}
+	
+	public Boolean getActivated() {
 		return activated;
 	}
 	
-	public void setActivated(boolean activated) {
+	public void setActivated(Boolean activated) {
 		this.activated = activated;
 	}
+	
+    @Override
+    public String toString() {
+        return new StringBuffer("ID : ").append(this.id)
+        		.append("\nName : ").append(this.name)        		
+        		.append("\nSchema language : ").append(this.schemaLanguage)
+        		.append("\nVersion : ").append(this.version)
+        		.append("\nPublishing date : ").append(this.publishingDate)
+        		.append("\nRepository : ").append(this.repository).toString();
+    }
+
 }
