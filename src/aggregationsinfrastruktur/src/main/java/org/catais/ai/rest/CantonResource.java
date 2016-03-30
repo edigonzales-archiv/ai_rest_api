@@ -40,13 +40,6 @@ public class CantonResource {
 		return cantonDAO.listCantons();
 	}
 	
-	@GET
-	@Path("count")
-	@Produces(MediaType.TEXT_PLAIN)
-	public int countActivatedCantons() {
-		return cantonDAO.countActivatedCantons();
-	}
-	
 	@POST
 	@Consumes(MediaType.APPLICATION_XML)
 	public Response activateCanton(Canton canton) {	
@@ -81,12 +74,7 @@ public class CantonResource {
 	@Path("{ct}")
 	@Consumes(MediaType.APPLICATION_XML)
 	public Response deleteCanton(@PathParam("ct") String cantonCode, @QueryParam("recursive") boolean recursive) {
-		
-		
-		System.out.println(cantonCode);
-		
 		cantonDAO.deleteCanton(cantonCode, recursive);
-		
 		return Response.status(200).build();
 	}
 	

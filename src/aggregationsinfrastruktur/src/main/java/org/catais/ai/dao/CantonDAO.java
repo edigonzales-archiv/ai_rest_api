@@ -23,14 +23,7 @@ public interface CantonDAO {
      * @throws DAOException If something fails at database level.
      */
 	public List<Canton> listCantons();
-	
-    /**
-     * Returns the number of activated cantons from the database.
-     * @return Number of activated cantons from the database.
-     * @throws DAOException If something fails at database level.
-     */
-	public int countActivatedCantons();
-	
+		
     /**
      * Activate a canton in the database. The canton code must exist, otherwise it will throw
      * IllegalArgumentException.

@@ -37,10 +37,13 @@ public class CantonDAOJDBC implements CantonDAO {
 			"SELECT count(*) FROM " + DB_TABLE + " WHERE activated = TRUE";	
 //	private static final String SQL_INSERT =
 //			"INSERT INTO User (email, password, firstname, lastname, birthdate) VALUES (?, MD5(?), ?, ?, ?)";
-	private static final String SQL_UPDATE_ACTIVATED =
+	private static final String SQL_UPDATE_ACTIVATE =
 			"UPDATE " + DB_TABLE + " SET activated = TRUE, email = ? WHERE code = ?";
 	private static final String SQL_UPDATE_CANTON =
 			"UPDATE " + DB_TABLE + " SET email = ? WHERE code = ? AND activated = TRUE";
+	private static final String SQL_UPDATE_DEACTIVATE =
+			"UPDATE " + DB_TABLE + " SET activated = FALSE WHERE code = ?";
+
 //	private static final String SQL_DELETE =
 //			"DELETE FROM User WHERE id = ?";
 //	private static final String SQL_EXIST_EMAIL =
@@ -84,27 +87,6 @@ public class CantonDAOJDBC implements CantonDAO {
 
 		return cantons;	
 	}
-
-	@Override
-	public int countActivatedCantons() {
-		int numberOfRows = 0;
-		
-		try (
-				Connection connection = daoFactory.getConnection();
-				PreparedStatement statement = connection.prepareStatement(SQL_COUNT);
-				ResultSet resultSet = statement.executeQuery();
-			)	
-		{		
-			if (resultSet.next()) {
-				numberOfRows = resultSet.getInt(1);
-				System.out.println("numberOfRows= " + numberOfRows);
-			} 
-		}
-		catch (SQLException e) {
-			throw new DAOException(e);
-		}
-		return numberOfRows;
-	}
 	
 	@Override
 	public void activateCanton(Canton canton) {
@@ -119,7 +101,7 @@ public class CantonDAOJDBC implements CantonDAO {
 		
 		try (
 				Connection connection = daoFactory.getConnection();
-        		PreparedStatement statement = prepareStatement(connection, SQL_UPDATE_ACTIVATED, false, values);
+        		PreparedStatement statement = prepareStatement(connection, SQL_UPDATE_ACTIVATE, false, values);
         	) 
         {
         	int affectedRows = statement.executeUpdate();
@@ -183,15 +165,37 @@ public class CantonDAOJDBC implements CantonDAO {
 	
 	@Override
 	public void deleteCanton(String cantonCode, boolean recursive) {
-		// Does canton exists (and is activated)?
+		// 1. Does canton exists (and is activated)?
 		
 		
-		// If recursive == false, does canton have corresponding models?
+		// 2. If recursive == false, does canton have corresponding models?
 		
 		
-		// Delete/deactivate canton.
-		// If recursive == true, delete all corresponding models.
+		// 3. Delete/deactivate canton.
+		//    If recursive == true, delete all corresponding models.
 		
+		// At the moment just deactivate canton:
+		if (cantonCode == null) {
+			throw new IllegalArgumentException("The canton code is null.");
+		}
+
+		Object[] values = {
+				cantonCode
+		};
+		
+		try (
+				Connection connection = daoFactory.getConnection();
+        		PreparedStatement statement = prepareStatement(connection, SQL_UPDATE_DEACTIVATE, false, values);
+        	) 
+        {
+        	int affectedRows = statement.executeUpdate();
+        	if (affectedRows == 0) {
+        		throw new DAOException("Updating canton failed, no rows affected.");
+        	}
+        } catch (SQLException e) {
+        	throw new DAOException(e);
+        }
+
 	}
 
 
