@@ -38,19 +38,10 @@ public class ModelResource {
 		}
 		
 		List<Model> models = modelDAO.listModels(cantonCode.toUpperCase());
-		
-
-				
+						
 		final GenericEntity<List<Model>> entity = new GenericEntity<List<Model>>(models) {};
 	
 		return Response.status(200).entity(entity).build();
-		
-//		System.out.println(cantonDAO.listCanton(cantonCode.toUpperCase()));
-//
-//		
-//		
-//		System.out.println(cantonCode);
-//		return 3;
 	}
 
 
