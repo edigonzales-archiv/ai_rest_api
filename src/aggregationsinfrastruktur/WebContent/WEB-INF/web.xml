@@ -22,7 +22,8 @@
 			<param-name>jersey.config.server.provider.packages</param-name>
 			<param-value>
 				org.catais.ai.rest,
-				com.fasterxml.jackson.jaxrs.json</param-value>			
+				com.fasterxml.jackson.jaxrs.json
+			</param-value>			
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
